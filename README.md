@@ -16,9 +16,10 @@
 - 03 [20180810-Linux终端下的一些快捷键](https://github.com/ihuangch/Summary/blob/master/Linux/Linux%E7%BB%88%E7%AB%AF%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 
 ### Ops
-- 01 [20180803-AWS中一些概念](https://github.com/ihuangch/summary/blob/master/Ops/AWS%E4%B8%AD%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5%E7%9A%84%E7%90%86%E8%A7%A3.md)
-- 02 [20180824-密钥对连接远程主机](https://github.com/ihuangch/summary/blob/master/Ops/%E5%AF%86%E9%92%A5%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E4%B8%BB%E6%9C%BA.md)
-- 03 [20171120-httpd服务器之原理](https://github.com/ihuangch/summary/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
+- 01 [20171120-httpd服务器之原理](https://github.com/ihuangch/summary/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
+- 02 [20171125-DNS原理](https://github.com/ihuangch/summary/blob/master/Ops/DNS%E5%8E%9F%E7%90%86.md)
+- 03 [20180803-AWS中一些概念](https://github.com/ihuangch/summary/blob/master/Ops/AWS%E4%B8%AD%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5%E7%9A%84%E7%90%86%E8%A7%A3.md)
+- 04 [20180824-密钥对连接远程主机](https://github.com/ihuangch/summary/blob/master/Ops/%E5%AF%86%E9%92%A5%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E4%B8%BB%E6%9C%BA.md)
 
 ### Network
 - 01 [20180806-网络划分相关](https://github.com/ihuangch/summary/blob/master/Network/%E7%BD%91%E7%BB%9C%E5%88%92%E5%88%86%E5%8F%8A%E7%9B%B8%E5%85%B3.md)
