@@ -22,6 +22,7 @@
 - 03 [20180803-AWS中一些概念](https://github.com/ihuangch/summary/blob/master/Ops/AWS%E4%B8%AD%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5%E7%9A%84%E7%90%86%E8%A7%A3.md)
 - 04 [20180824-密钥对连接远程主机](https://github.com/ihuangch/summary/blob/master/Ops/%E5%AF%86%E9%92%A5%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E4%B8%BB%E6%9C%BA.md)
 - 05 [20180910-微服务架构](https://github.com/ihuangch/summary/blob/master/Ops/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.md)
+- 06 [20180913-FTP服务原理](https://github.com/ihuangch/summary/issues/1)
 
 ### Network
 - 01 [20180806-网络划分相关](https://github.com/ihuangch/summary/blob/master/Network/%E7%BD%91%E7%BB%9C%E5%88%92%E5%88%86%E5%8F%8A%E7%9B%B8%E5%85%B3.md)
