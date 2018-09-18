@@ -15,6 +15,7 @@
 - 02 [20180803-CentOS6更换网卡后无法启动网卡的排查](https://github.com/ihuangch/summary/blob/master/Linux/CentOS6%E6%9B%B4%E6%8D%A2%E7%BD%91%E5%8D%A1%E5%90%8E%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1%E7%9A%84%E6%8E%92%E6%9F%A5.md)
 - 03 [20180810-Linux终端下的一些快捷键](https://github.com/ihuangch/Summary/blob/master/Linux/Linux%E7%BB%88%E7%AB%AF%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 - 04 [20180913-网络相关命令](https://github.com/ihuangch/summary/blob/master/Linux/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
+- 05 [20180918-文本处理类命令](https://github.com/ihuangch/summary/issues/2)
 
 ### Ops
 - 01 [20171120-httpd服务器之原理](https://github.com/ihuangch/summary/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
