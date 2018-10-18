@@ -17,6 +17,9 @@
 - 04 [20180913-网络相关命令](https://github.com/ihuangch/summary/blob/master/Linux/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
 - 05 [20180918-文本处理类命令](https://github.com/ihuangch/summary/issues/2)
 - 06 [20181011-文本三剑客](https://github.com/ihuangch/summary/issues/3)
+- 07 [20181012-文本三剑客](https://github.com/ihuangch/summary/issues/4)
+- 08 [20181017-文本三剑客](https://github.com/ihuangch/summary/issues/5)
+
 
 ### Ops
 - 01 [20171120-httpd服务器之原理](https://github.com/ihuangch/summary/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
