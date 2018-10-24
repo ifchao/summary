@@ -19,6 +19,7 @@
 - 06 [20181011-文本三剑客](https://github.com/ihuangch/summary/issues/3)
 - 07 [20181012-系统监控类命令](https://github.com/ihuangch/summary/issues/4)
 - 08 [20181017-正则表达式-初级](https://github.com/ihuangch/summary/issues/5)
+- 09 [20181017-磁盘管理类命令](https://github.com/ihuangch/summary/issues/6)
 
 
 ### Ops
