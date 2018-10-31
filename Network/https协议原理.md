@@ -3,6 +3,7 @@ HTTPS 是HTTP协议的安全版本，HTTP协议(超文本传输协议)是在浏�
 
 Internet Explorer，Firefox和Chrome等web浏览器会在地址栏显示挂锁的图标来显示HTTPS连接有效。  
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Network/pics/http-vs-https.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://../Network/pics/http-vs-https.png" height="300px" /> </div><br>
 
 ### HTTPS有什么作用?
 正确配置后HTTPS连接可以保证三件事:
@@ -10,5 +11,10 @@ Internet Explorer，Firefox和Chrome等web浏览器会在地址栏显示挂锁�
 - 真实性。 访问者确定访问的真实的网站，而不是模仿的网站或者是中间人
 - 完整性。 访问者和网站之间发送的数据没有被修改或者篡改  
 一个HTTPS的请求会使你无法完整的查看报文头部的信息。
+对比访问https://www.google.com 和 http://www.google.com
+使用curl命令分别进行抓包分析:
+curl --head http://www.google.com
+![]()
+curl 
 
 
