@@ -16,7 +16,7 @@ Internet Explorer，Firefox和Chrome等web浏览器会在地址栏显示挂锁�
 
 curl --head http://www.google.com  
 
-<div align=center>![http-head](../Network/pics/http-head.png)
+<div align=center>![http-head](https:github.com/ihuangch/blog/blob/master/Network/pics/http-head.png)</div><br>
 <div align=center>![http-mes](../Network/pics/http-mes.png)
 
 curl --head https://www.google.com  
