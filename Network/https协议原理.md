@@ -37,12 +37,14 @@ curl --head https://www.google.com
 ### HTTPS是怎么工作的?
 HTTPS协议是在原有的HTTP协议中再封装一层SSL/TLS协议，在HTTP之下TCP之上增加SSL/TLS协议实现HTTP的加密通信。  
 <div align="center"> <img src="../Network/pics/https.png"  alt="https"/> </div><br>
+
 #### 什么是SSL/TLS协议?
 SSL 即 安全套接字层（Secure Socket Layer），是 Netscape 公司研发，通过数据加密技术来保障互联网上数据传输的
 安全性。现已被广泛地用于 Web 浏览器与服务器之间的身份认证和加密数据传输。SSL 位于 TCP/IP 协议和各种应用层
 协议之间，由 SSL 记录协议 和 SSL 握手协议 两层组成。目前版本为 3.0。
 TLS 即 传输层安全协议（Transfer Layer Security）用于两个应用程序之间提供保密性和数据完整性。该协议
-由两层组成：TLS 记录协议和 TLS 握手协议。
+由两层组成：TLS 记录协议和 TLS 握手协议。  
+
 #### SSL和TLS的关系和历史?
 互联网加密通信协议的历史，几乎与互联网一样长。  
 1994年，NetScape公司设计了SSL协议（Secure Sockets Layer）的1.0版，但是未发布。  
@@ -56,6 +58,7 @@ TLS 即 传输层安全协议（Transfer Layer Security）用于两个应用程�
 TLS 1.0通常被标示为SSL 3.1，  
 TLS 1.1为SSL 3.2，  
 TLS 1.2为SSL 3.3。  
+
 #### SSL/TLS基本运行过程?
 SSL/TLS协议的基本思路是采用公钥加密法，也就是说，客户端先向服务器端索要公钥，然后用公钥加密信息，
 服务器收到密文后，用自己的私钥解密。  
@@ -74,7 +77,8 @@ SSL/TLS协议的基本思路是采用公钥加密法，也就是说，客户端�
 ### SSL证书?
 SSL 证书是一种数字证书，它是由 数字证书认证机构（Certificate Authority, CA） 颁发的，通常是一个很小的数据文件，
 这个文件将 密钥 和 组织（使用证书的组织或个人）的相应信息 绑定在一起。SSL证书需要安装在服务器上来激活 HTTPS 协议，从而允许服务器和浏览器之间的安全连接。  
-SSL/TSL协议中将公钥放在数字证书中。这个证书就是CA证书。这涉及到相关的加密方式。如果需要了解可以查看我的另一篇Blog。  
-[相关加密方式](https://github.com/ihuangch/blog/issues/7)
+SSL/TSL协议中将公钥放在数字证书中。这个证书就是CA证书。这涉及到相关的加密方式。如果需要了解可以查看我的另一篇Blog。
+[相关加密方式](https://github.com/ihuangch/blog/issues/7)  
+
 
 
