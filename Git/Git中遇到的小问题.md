@@ -33,4 +33,3 @@ git config --global user.email [email]
 CentOS6 --> CentOS7  
 Python2 --> Python3
 
-已经工作，文章更新的也不及时。
