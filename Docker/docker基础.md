@@ -23,6 +23,7 @@
 不统一等一系列问题。PaaS在IaaS基础上发展而来，众多PaaS已经意思到可以利用容器技术解决资源利用率的
 问题，但是PaaS通常在应用架构选择，支持的软件环境服务方面有较大的限制，这带来了应用和平台无法无法
 解耦、应用运行时环境局限性强、运维人员控制力下降的问题。  
+
 这时docker的出现，或许能够解决上面所面临的问题。  
 
 ### Docker
@@ -30,8 +31,10 @@
 根据官方的定义，Docker是以Docker容器为资源分割和调度的基本单位，封装整个软件运行时环境，为开发者
 和系统管理员设计的，用于构建、发布和运行分布式应用的平台。它是一个跨平台、可移植并且简单易用的容器
 解决方案。  
+
 Docker的源代码托管在GitHub上，基于Go语言开发并且遵从Apache2.0协议。Docker可以在容器内部快速自动化
 的部署应用，并通过操作系统内核技术(namespaces,cgroups等)为容器提供资源隔离和安全保证。  
+
 Docker通过Linux内核的cgroup，namespaces,以及AUFS类的Union FS等技术，对进程进行封装隔离，属于操作
 系统层面的虚拟化技术。在容器的基础上，进行了进一步的封装，从文件系统、网络互联到进程隔离等等，极
 大的简化了容器的创建和维护。使得Docker技术比虚拟机技术更为轻便、快捷。  
@@ -39,12 +42,16 @@ Docker通过Linux内核的cgroup，namespaces,以及AUFS类的Union FS等技术�
 #### docker和传统虚拟机技术的对比
 传统虚拟机技术是虚拟出一套硬件后，在这个虚拟的硬件设备上运行一个完整的操作系统，在该系统上再运行
 所需要的应用进程。  
+
 而容器内的应用进程之间运行在宿主机的内核，容器内没有自己的内核，而且也没有进行硬件虚拟化。因此容器
 要比传统虚拟机更加轻便。
+
 ###### 传统虚拟机技术:
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/VirtualMachines.png" height="300px" /> </div><br> 
+
 ###### docker容器技术:
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker.png" height="300px" /> </div><br> 
+
 ###### docker 对比 虚拟机
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-vs-virtual.png" height="300px" /> </div><br> 
 
@@ -74,6 +81,7 @@ Docker使用的分层存储以及镜像的技术，使得应用重复部分的�
 
 可以看出容器技术的生态系统自下而上分别覆盖了IaaS层和PaaS层所涉及的各类问题，包括资源调度，编排，
 部署，监控，配置管理，存储网络管理，安全，容器化应用支撑平台等。
+
 ###### 容器生态系统:
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-life.png"/> </div><br> 
 
