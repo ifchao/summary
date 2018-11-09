@@ -71,7 +71,7 @@ ssh -D 0.0.0.0:9080 user@edge_node
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-L.png" height="300px" /> </div><br>
 
 ###### 本地端口转发网络拓扑图:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Local.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Logcal.png" height="300px" /> </div><br>
 
 ###### 代理服务器:
 ```
