@@ -33,7 +33,7 @@ Port Forwarding，有时被叫做隧道，是ssh为网络安全通信使用的�
 内部ip地址上的一个端口。  
 ----摘自百度百科  
 
-同时ssh正向隧道、ssh反向隧道、ssh多级隧道，又分别对应哪种端口转发？？？  
+同时ssh正向隧道、ssh反向隧道、又分别对应哪种端口转发？？？  
 接下来会一一分析。  
 
 ### 动态端口转发:
@@ -43,7 +43,27 @@ Port Forwarding，有时被叫做隧道，是ssh为网络安全通信使用的�
 
 
 ###### 动态端口转发网络拓扑图:
-<div align="center"> <img src=""/> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Dy.png" height="300px" /> </div><br>
 
+###### 代理服务器:
+```
+ssh -D [bind_address:]port user@edge_node
+```
+	
+	参数说明:
+		bind_address:绑定的ip地址，默认会绑定在本地回环地址127.0.0.1，如果空值或者为*，会绑定
+		本地所有的IP地址，如果希望绑定的端口仅供本机使用，可以指定为localhost。
+		port:指定本地绑定的端口
+
+
+通过这样配置，我们就可以通过图中的代理服务器，访问相对应的国家的网络。当然我们需要在自己的网络
+配置好socks协议，相关的服务器地址ip和port。
+###### 优点:
+配置完成后，通过socks，可以访问edge_node中网络中的所有服务。
+###### 确定:
+用户需要额外配置socks协议
+
+
+### 本地端口转发:
 
 
