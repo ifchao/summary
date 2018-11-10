@@ -63,11 +63,11 @@ yum-config-manager \
 # 	  --add-repo \
 #	  https://download.docker.com/linux/centos/docker-ce.repo
 ```
-测试版本:
+添加测试版本源:
 ```
 yum-config-manager --enable docker-ce-test
 ```
-每日构建版本:
+添加每日构建版本源:
 ```
 yum-config-manager --enable docker-ce-nightly
 ```
