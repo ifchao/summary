@@ -47,4 +47,5 @@
 
 ### Git
 - 01 [20180803-Git中的一些小问题](https://github.com/ihuangch/blog/blob/master/Git/Git%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98.md)
+- 02 [20181111-Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/Git%E5%92%8C%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.md)
 
