@@ -9,17 +9,17 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 ，Docker daemon默认绑定一个Unix Socker来代替原来的TCP端口，该Unix Socker默认是属于root用户的。因此
 ，在执行Docker命令需要root权限。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/local-version.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-socket.png" height="300px" /> </div><br>
 
 随着Docker的不断发展，docker的子命令也有很多(run,build,attach)，其中核心子命令(run,exec)还有很多
 复杂的可执行选项。对于特定的子命令，可以使用docker CMD --help命令来查看子命令的详细信息，包括子命令
 的使用方法和可用的操作参数。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/local-version.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-cmd.png" height="300px" /> </div><br>
 
 从docker命令使用出发，梳理出命令结构图：  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/local-version.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-use.png" height="300px" /> </div><br>
 
 #### 详细命令及参数
 接下来的介绍一些常用的命令参数。
