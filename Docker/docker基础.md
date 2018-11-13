@@ -8,7 +8,7 @@
 #### 云计算平台?
 经典云计算架构包括IaaS(Infrasstructure as a Service,基础设施即服务)、Paas(Platform as a Service,
 平台即服务)、SaaS(Software as a Service,软件即服务)三层服务。  
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/yunpingtai.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/yunpingtai.png"  /> </div><br> 
 
 - SaaS层一般为用户服务，提供里一套完整的可用的软件系统，让一般用户无需关注技术细节，只需要通过
   浏览器，应用客户端等方式就能使用部署在云上的应用服务。
@@ -47,13 +47,13 @@ Docker通过Linux内核的cgroup，namespaces,以及AUFS类的Union FS等技术�
 要比传统虚拟机更加轻便。
 
 ###### 传统虚拟机技术:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/VirtualMachines.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/VirtualMachines.png"  /> </div><br> 
 
 ###### docker容器技术:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker.png"  /> </div><br> 
 
 ###### docker 对比 虚拟机
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-vs-virtual.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Docker/pic/docker-vs-virtual.png"  /> </div><br> 
 
 
 ### 为什么要使用docker?
