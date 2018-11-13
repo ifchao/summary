@@ -87,7 +87,20 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 - docker [container] prune：清理所有处于终止状态的容器
 
 		
+#### 4.镜像管理
+image 子命令。同样也可以不使用子命令操作。
+- docker pull [OPTIONS] NAME[:TAG|@DIGEST]：获取镜像
 
+		默认：官方仓库最新版本的软件
+
+
+- docker images | docker image ls：列出镜像
+
+- docker image rm [options] <IMage> | docker rmi [options] <IMage>：删除镜像
+
+		可以通过镜像短ID，镜像长ID，镜像名或者镜像摘要来删除
+
+- 
 
 
 
