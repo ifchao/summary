@@ -2,7 +2,7 @@
 HTTPS 是HTTP协议的安全版本，HTTP协议(超文本传输协议)是在浏览器和连接的网站之间发送数据的协议。HTTPS末尾的S代表的是安全的意思。这意味着浏览器和网站之间的所有通信都是加密的。HTTPS通常用于保护机密的在线交易，例如网上银行和在线购物等。  
 
 Internet Explorer，Firefox和Chrome等web浏览器会在地址栏显示挂锁的图标来显示HTTPS连接有效。  
-<div align="center"> <img src="../Network/pics/http-vs-https.png" height="300px" /> </div><br>
+<div align="center"> <img src="../Network/pics/http-vs-https.png"  /> </div><br>
 
 ### HTTPS有什么作用?
 正确配置后HTTPS连接可以保证三件事:
@@ -18,12 +18,12 @@ Internet Explorer，Firefox和Chrome等web浏览器会在地址栏显示挂锁�
 
 curl --head http://www.google.com  
 
-<div align="center"> <img src="../Network/pics/http-head.png" height="300px" alt="http-head"/> </div><br>
-<div align="center"> <img src="../Network/pics/http-mes.png" height="300px" alt="http-mes"/> </div><br>
+<div align="center"> <img src="../Network/pics/http-head.png"  alt="http-head"/> </div><br>
+<div align="center"> <img src="../Network/pics/http-mes.png"  alt="http-mes"/> </div><br>
 
 curl --head https://www.google.com  
 
-<div align="center"> <img src="../Network/pics/https-head.png" height="300px" alt="https-head"/> </div><br>
+<div align="center"> <img src="../Network/pics/https-head.png"  alt="https-head"/> </div><br>
 <div align="center"> <img src="../Network/pics/https-mes.png"  alt="https-head"/> </div><br>
 
 从上面几张图片可以看到使用curl命令访问http网站和https网站是两种不同的报文，其中http方式访问网站使用head方法，
