@@ -11,27 +11,27 @@
 	所以人们开发了许多本地版本控制系统，大多都是采用某种简单的数据库来记录文件的历次更新
 	差异。通过检查修改后的文件补丁，计算各个版本的文件内容。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/local-version.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/local-version.png"  /> </div><br> 
 	
 2. 集中化的版本控制系统
 	解决让在不同系统上的开发者协同工作。于是集中化的版本控制中心应运而生。这类系统，都有
 	一个单一的集中管理的服务器，保存所有文件的修订版本，系统工作的人通过客户端连接服务器，
 	取出最新的文件或者更新。多年来，这成为了版本控制系统的标准做法。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/center-version.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/center-version.png"  /> </div><br> 
 
 3. 分布式版本控制系统
 	解决集中化版本控制系统的单点故障问题。这种系统，客户端并不只提取出最新版本的文件快照，
 	而是把整个代码仓库都镜像下来。这么一来，如果服务器发生故障，事后都可以用任何一个镜像
 	出来的本地仓库进行恢复。因为每一次的提取操作，都是对于整个代码仓库的完整备份。
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/th-version.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/th-version.png"  /> </div><br> 
 
 ### Git的优势
 ###### 1.直接记录快照，而非差异比较
 Git和其他版本控制系统的差别在于:Git只关心文件数据的整体是否发生变化，而大多数其他系统则只
 关心文件内容的具体差异。
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/other-diff.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/other-diff.png"  /> </div><br> 
 
 Git并不保存这些前后变化的差异数据。实际上Git更像是把变化的文件做快照后，记录在一个微型的
 文件系统中。每次提交更新时，都会纵览一遍所有文件的指纹信息并对文件作一快照，然后保存一个
@@ -39,7 +39,7 @@ Git并不保存这些前后变化的差异数据。实际上Git更像是把变�
 作一个链接。  
 这样Git更像是一个小型的文件系统。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/git.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/git.png"  /> </div><br> 
 
 ###### 2.几乎所有的操作都是在本地执行
 在Git中绝大多数操作都只需要访问本地文件和资源即可，不用联网。这样Git在本地磁盘上就保存
@@ -58,7 +58,7 @@ Git使用sha-1算法计算数据的校验和，通过对文件的内容和目录
 在Git中，对于任何一个文件，在Git内都只有3中状态:已提交(commited), 已修改(modified),
 和已暂存(staged)。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/file-status.png" height="300px" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Git/pic/file-status.png"  /> </div><br> 
 
 已提交：表示该文件已经被安全的保存在本地的数据库中了；  
 已修改：表示修改了某个文件但是还没有提交保存；  
