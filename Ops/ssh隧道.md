@@ -40,11 +40,11 @@ Port Forwarding，有时被叫做隧道，是ssh为网络安全通信使用的�
 动态端口转发允许配置一个本地端口，以便将数据通过隧道传输到所有远程主机。但是，要利用这个功能，连接
 到这个端口的客户端应用程序应该使用SOCKS协议发送流量。客户端创建SOCKS代理，并且应用程序（如浏览器）
 使用socks协议来指定当流量离开ssh隧道的另一端时应该传输的地址。  
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-D.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-D.png"  /> </div><br>
 
 
 ###### 动态端口转发网络拓扑图:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Dy.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Dy.png"  /> </div><br>
 
 ###### 代理服务器:
 ```
@@ -68,10 +68,10 @@ ssh -D 0.0.0.0:9080 user@edge_node
 
 ### 本地端口转发:
 通过SSH隧道，将一个远端机器能够访问到的地址和端口，映射为一个本地的端口。  
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-L.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-L.png"  /> </div><br>
 
 ###### 本地端口转发网络拓扑图:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Logcal.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Logcal.png"  /> </div><br>
 
 ###### 代理服务器:
 ```
@@ -95,10 +95,10 @@ ssh -L [bind_address:]port:host:hostport
 但是外网主机却无法访问内网主机的服务。如果内网主机向外网主机建立一个远程转发端口，就可以让外网
 主机通过该端口访问内网主机的服务。  
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-R.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-R.png"  /> </div><br>
 
 ###### 远程端口转发网络拓扑图:
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Re.png" height="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/ssh-Re.png"  /> </div><br>
 
 ###### 代理服务器:
 ```
