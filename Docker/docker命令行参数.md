@@ -32,8 +32,10 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 - docker run：执行一个新命令在一个新容器,是Docker的核心命令之一，用户可以使用的选项很多。
 	所有的选项的说明可以通过docker run --help查看
 
-	docker run [options] Image [CMD] [Arg]
-		-i：使用交互模式，始终保持输入流开发
+	docker run [options] Image [CMD] [Arg]  
+
+		-i：使用交互模式，始终保持输入流开发  
+
 		-t：分配一个伪终端，一般两个参数结合时使用-it，即在容器中利用打开的终端交互操作
 		--name：指定docker run命令启动的容器的名字，若不指定，Docker为容器随机分配一个名字
 		-c：用于给运行在容器中的所有进程分配CPU的shares值。这是一个相对权重，实际处理能力还和宿主机
