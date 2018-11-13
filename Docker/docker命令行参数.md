@@ -29,7 +29,30 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 
 ##### 2. 容器生命周期管理
 容器生命周期命令涉及容器启动，停止等功能。
-- docker run：执行一个新命令在一个新容器  
-		-i：交互执行
+- docker run：执行一个新命令在一个新容器,是Docker的核心命令之一，用户可以使用的选项很多。
+	所有的选项的说明可以通过docker run --help查看
+
+	docker run [options] Image [CMD] [Arg]
+		-i：使用交互模式，始终保持输入流开发
+		-t：分配一个伪终端，一般两个参数结合时使用-it，即在容器中利用打开的终端交互操作
+		--name：指定docker run命令启动的容器的名字，若不指定，Docker为容器随机分配一个名字
+		-c：用于给运行在容器中的所有进程分配CPU的shares值。这是一个相对权重，实际处理能力还和宿主机
+			CPU相关
+		-m：用于限制为容器中所欲进程分配的内存总量，以B，K，M，G为单位
+		-v: 用于挂载一个volume，可以用多个-v参数同时挂载多个volume。
+			volume格式:[host-dir]:[container-dir]:[rw|ro]
+		-p：用于将容器的端口暴露给宿主机的端口。（端口映射），这样可以让外部主机通过宿主机的端口来访问容器内的应用。
+			常用格式:hostport:container-port
+- docker start|stop|restart|kill:
+
+	docker run命令可以新建一个容器来运行，对于已经存在的容器，通过start|stop|restart|kill命令来
+	启动、停止和重启。使用docker run命令新建一个容器时，会产生一个容器ID，start|stop|restart|kill
+	命令容器ID来选择容器。一些情况也可以使用容器名称来选择容器。
+
+	docker start命令使用-i选项来开启交互模式，始终保持输入流开放。使用-a选项附加标准输入，输出或
+	错误输出。此外docker stop和docker restart命令使用-t选项来设定容器停止前的等待时间。
+
+
+
 	
 
