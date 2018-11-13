@@ -51,12 +51,12 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 			常用格式:hostport:container-port
 - docker start|stop|restart|kill：  
 
-	docker run命令可以新建一个容器来运行，对于已经存在的容器，通过start|stop|restart|kill命令来
-	启动、停止和重启。使用docker run命令新建一个容器时，会产生一个容器ID，start|stop|restart|kill
-	命令容器ID来选择容器。一些情况也可以使用容器名称来选择容器。  
+		docker run命令可以新建一个容器来运行，对于已经存在的容器，通过start|stop|restart|kill命令来
+		启动、停止和重启。使用docker run命令新建一个容器时，会产生一个容器ID，start|stop|restart|kill
+		命令容器ID来选择容器。一些情况也可以使用容器名称来选择容器。  
 
-	docker start命令使用-i选项来开启交互模式，始终保持输入流开放。使用-a选项附加标准输入，输出或
-	错误输出。此外docker stop和docker restart命令使用-t选项来设定容器停止前的等待时间。
+		docker start命令使用-i选项来开启交互模式，始终保持输入流开放。使用-a选项附加标准输入，输出或
+		错误输出。此外docker stop和docker restart命令使用-t选项来设定容器停止前的等待时间。
 
 
 
