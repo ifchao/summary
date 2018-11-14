@@ -1,3 +1,10 @@
+___
+- FileName: a.md
+- - Author: ihuangch -huangch96@qq.com
+- - Description: --- 
+- - Last Modified:2018-11-14 17:32:16
+ ___
+
 ### Docker命令行参数解读
 在使用Docker时，需要使用Docker命令行工具docker命令和Docker daemon建立通信。Docker daemon是Docker
 守护进程，复制接收并分发执行Docker命令。  
@@ -181,6 +188,7 @@ docker run -p 127.0.0.1:80:8080 -d tarining/webapp python app.py
 docker run -p 127.0.0.1:80:8080/udp -d tarining/webapp python app.py
 # 映射时指明协议
 ```
+
 - docker port CONTAINER_NAME [port]：查看当前映射的端口配置，也可以查看到绑定的地址
 
 **注意：**
@@ -204,6 +212,7 @@ Docker利用虚拟文件来挂载容器的3个相关配置文件。
 这种机制可以让宿主主机DNS信息发生更新后，所有Docker容器的DNS配置通过/etc/resolv.conf文件立刻得到更新。
 
 配置全部容器的DNS，也可以在/etc/docker/daemon.json文件中增加以下内容来设置:  
+
 ```
 {
 "dns":[
@@ -214,6 +223,13 @@ Docker利用虚拟文件来挂载容器的3个相关配置文件。
 ```
 
 
+#### 7.容器运维操作
+- docker cp [options]：在容器和本地宿主机之间复制文件
+- docker diff [options]：检查一个容器内文件系统的修改，包括修改和增加
+- docker events：从服务端获取实时的事件
+- docker rename：重命名一个容器
 
-	
+### 总结
+docker有很多子命令，子命令同样有很多选项和参数。  
+所以应该常用docker --help和docker CMD --help  
 
