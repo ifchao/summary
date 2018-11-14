@@ -86,6 +86,8 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 	
 - docker [container] prune：清理所有处于终止状态的容器
 
+- docker [container] inspect [CONT]：查看容器信息
+
 		
 #### 4.镜像管理
 image 子命令。同样也可以不使用子命令操作。
@@ -94,16 +96,71 @@ image 子命令。同样也可以不使用子命令操作。
 		默认：官方仓库最新版本的软件
 
 
-- docker images | docker image ls：列出镜像
+- docker images | docker image ls：列出已经存在的镜像
 
 - docker image rm [options] <IMage> | docker rmi [options] <IMage>：删除镜像
 
 		可以通过镜像短ID，镜像长ID，镜像名或者镜像摘要来删除
 
-- 
+- docker search <IMage>：搜索镜像
 
+#### 5.数据卷管理
+volume 子命令。在容器中管理数据主要有两种方式：
+- 数据卷（volumes）
+- 挂载主机目录（Bind mounts）
+##### 数据卷
+数据卷是一个可以提供一个或者多个容器使用的特殊目录，它绕过UFS，可以提供很多游泳的特性
+- 1.数据卷可以在容器间共享和重用
+- 2.对数据卷的修改会立即生效
+- 3.对数据卷的更新，不会影响镜像
+- 4.数据卷会默认一直存在，即使容器被删除。
+**数据卷的使用，类似与Linux下对于目录或者文件进行mount，镜像中的被指定为挂载点的目录中的文件会被隐藏，能显示看的是挂载的数据卷**
+- docker volume create my-vol：创建一个数据卷
+- docker volume ls：查看所有的数据卷
+- docker volume inspect my-vol：查看指定数据卷的信息
+在使用docker run命令的时候，使用--mount标记将数据卷挂载到容器里。在一次docker run中可以挂载多个数据卷。  
+```
+# docker run -d -P \
+	--name web \        					# 指定容器名称
+	# -v my-vol:/webapp \ 					# 挂载数据卷
+	--mount source=my-vol,target=/webapp \  #挂载数据卷
+	training/webapp \ 						#镜像名称
+	python app.py 							#执行的命令
+```
 
+- docker volume rm <vol-name>：删除某个数据卷
+数据卷是被设计用来持久化数据的，它的生命周期独立与容器，Docker不会在容器被删除后自动删除数据卷，
+并且也不存在垃圾回收这样的机制来处理没有任何容器引用的数据卷。如果需要在删除容器的同时移除数据卷。
+可以在删除容器时使用docker rm -v这个命令。无主的数据卷可能会占据很多空间，要清理使用以下命令。
+- docker volume pure：清楚所有无主数据卷
 
+##### 挂载主机目录作为数据卷
+使用--mount选项可以指定挂载一个本地主机的目录到容器中。
+```
+# docker run -d -P \ 					# 后台运行，并指定随机端口
+	--name web \
+	# -v /src/webapp:/opt/webapp \
+	--mount type=bind,source=/src/webapp,target=/opt/webapp \
+	# --mount type=bind,source=/src/webapp,target=/opt/webapp,readonly \
+	training/webapp \
+	python app.py
+```
+本地目录的路径必须时绝对路径，以前使用-v参数时入股哦本地目录不存在Docker会自动为你创建一个文件夹。  
+现在使用--mount时，如果本地目录不存在，Docker会报错。  
+Docker挂载主机目录的默认权限时读写，也可以通过增加readonly指定为只读。  
+加了readonly后，就挂载为只读来了。如果在容器内/opt/webapp目录新建文件，会报错。  
+
+##### 挂载一个本机主机文件作为数据卷
+使用--mount也可以从主机挂载单个文件到容器中
+```
+# docker run --rm -it \ 			# --rm:当容器退出时，自动删除容器
+	# -v /tmp/filename:/root/filename \
+	--mount type=bind,source=/tmp/filename,target=/root/filename \
+	ubuntu:17.10 \
+	bash
+```
+
+#### 6.基础网络管理
 
 
 
