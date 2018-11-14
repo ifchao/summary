@@ -48,10 +48,10 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 		-m：用于限制为容器中所欲进程分配的内存总量，以B，K，M，G为单位  
 
 		-v: 用于挂载一个volume，可以用多个-v参数同时挂载多个volume。  
-			volume格式:[host-dir]:[container-dir]:[rw|ro]  
+			volume格式：[host-dir]:[container-dir]:[rw|ro]  
 
 		-p：用于将容器的端口暴露给宿主机的端口。（端口映射），这样可以让外部主机通过宿主机的端口来访问容器内的应用。  
-			常用格式:hostport:container-port
+			常用格式：hostport:container-port
 		
 - docker [container] start|stop|restart|kill [options] CONTAINER：容器启动，停止，重启，杀死容器。[container]在新版中可以使用，
 	应该是给相关命令进行分类。用户使用可以使用也可以不用。
@@ -163,6 +163,55 @@ Docker挂载主机目录的默认权限时读写，也可以通过增加readonly
 ```
 
 #### 6.基础网络管理
+Docker允许通过外部访问容器或者容器互联的方式提供通信。
+##### 外部访问容器
+容器中可以运行一些网络应用，如果需要让外部主机能够访问这些内容，可以通过-P或者-p参数来指定端口映射。  
+
+- 使用-p则可以指定要映射的端口，并且，在一个指定的端口上只可以绑定一个容器。  
+	支持的格式有：ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort
+
+
+```
+docker run -p 80:8080 -d tarining/webapp python app.py
+# 默认绑定本地所有接口上的所有地址
+docker run -p 127.0.0.1::8080 -d tarining/webapp python app.py
+# 映射到指定地址的任意端口
+docker run -p 127.0.0.1:80:8080 -d tarining/webapp python app.py
+# 映射到指定地址的指定端口
+docker run -p 127.0.0.1:80:8080/udp -d tarining/webapp python app.py
+# 映射时指明协议
+```
+- docker port CONTAINER_NAME [port]：查看当前映射的端口配置，也可以查看到绑定的地址
+
+**注意：**
+- 容器有自己的内部网络和ip地址（使用docker inspect可以获取所有的变量，Docker还可以有一个可变的网络配置）
+- -p参数可以使用多次用来绑定多个端口
+
+##### 容器互联
+随着Docker网络的完善，建议将容器加入自定义的Docker网络来连接多个容器，而不是使用--link参数。  
+network子命令可以管理Docker网络  
+
+###### 创建网络
+- docker network create -d bridge my-net：创建一个新的Docker网络。-d指明网络的类型
+
+###### 连接容器
+- docker run -it --rm --name busybox1 --network my-net busybox sh
+	运行一个容器并加入到my-net网络
+
+##### 配置DNS
+自定义配置容器的主机名和DNS。  
+Docker利用虚拟文件来挂载容器的3个相关配置文件。  
+这种机制可以让宿主主机DNS信息发生更新后，所有Docker容器的DNS配置通过/etc/resolv.conf文件立刻得到更新。
+
+配置全部容器的DNS，也可以在/etc/docker/daemon.json文件中增加以下内容来设置:  
+```
+{
+"dns":[
+	"114.114.114.114",
+	"8.8.8.8"
+	]
+}
+```
 
 
 
