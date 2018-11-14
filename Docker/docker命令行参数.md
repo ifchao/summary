@@ -1,9 +1,9 @@
 ___
-- FileName: a.md
-- - Author: ihuangch -huangch96@qq.com
-- - Description: --- 
-- - Last Modified:2018-11-14 17:32:16
- ___
+- FileName: docker命令行参数.md
+- Author: ihuangch -huangch96@qq.com
+- Description: --- 
+- Last Modified:2018-11-14 17:32:16
+___
 
 ### Docker命令行参数解读
 在使用Docker时，需要使用Docker命令行工具docker命令和Docker daemon建立通信。Docker daemon是Docker
