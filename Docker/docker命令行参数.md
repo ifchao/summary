@@ -23,11 +23,11 @@ Docker命令的执行一般都需要root权限，因为Docker命令行工具dock
 
 #### 详细命令及参数
 接下来的介绍一些常用的命令参数。
-##### 1. Docker环境信息
+#### 1. Docker环境信息
 - docker info：用于检查Docker是否正确安装。如果正确安装，输出Docker配置信息。
 - docker version：结合docker info使用，能够提取到足够详细的信息。
 
-##### 2. 容器管理[container]
+#### 2. 容器管理[container]
 在新版中container也是docker的一个子命令，用于管理容器，后续可以接相关的容器管理命令，例如：start,ps等  
 
 - docker run：执行一个新命令在一个新容器,是Docker的核心命令之一，用户可以使用的选项很多。
@@ -114,7 +114,9 @@ volume 子命令。在容器中管理数据主要有两种方式：
 - 2.对数据卷的修改会立即生效
 - 3.对数据卷的更新，不会影响镜像
 - 4.数据卷会默认一直存在，即使容器被删除。
+
 **数据卷的使用，类似与Linux下对于目录或者文件进行mount，镜像中的被指定为挂载点的目录中的文件会被隐藏，能显示看的是挂载的数据卷**
+
 - docker volume create my-vol：创建一个数据卷
 - docker volume ls：查看所有的数据卷
 - docker volume inspect my-vol：查看指定数据卷的信息
