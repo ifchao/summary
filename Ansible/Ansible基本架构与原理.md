@@ -26,7 +26,7 @@ Puppet：ruby编写，大型公司使用
 5、安全，基于OpenSSH  
 6、基于playbook编排任务  
 7、幂等性：一个任务执行一遍和n遍效果一样，不因重复执行带来意外情况  
-8、yaml格式编排任务，支持丰富的数据结构
+8、yaml格式编排任务，支持丰富的数据结构  
 9、较强大的多层解决方案
 
 ##### Ansible主要组成部分
@@ -37,6 +37,7 @@ Puppet：ruby编写，大型公司使用
 - api：提供第三反程序调用的应用程序编程接口
 - ansible：组合inventory，api，modules，plugins，可以理解为ansible命令工具，核心执行工具
 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansible-arch.png" /> </div><br
 
 
 
