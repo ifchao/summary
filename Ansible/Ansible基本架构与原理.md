@@ -1,5 +1,5 @@
 ___
-- FileName: Ansible基础.md
+- FileName: Ansible基本架构与原理.md
 - Author: ihuangch -huangch96@qq.com
 - Description: ---
 - Create:2018-11-15 19:34:14
@@ -28,6 +28,17 @@ Puppet：ruby编写，大型公司使用
 7、幂等性：一个任务执行一遍和n遍效果一样，不因重复执行带来意外情况  
 8、yaml格式编排任务，支持丰富的数据结构
 9、较强大的多层解决方案
+
+##### Ansible主要组成部分
+- ansible playbooks：任务剧本，编排定义ansible任务集的配置文件，由ansible顺序依次执行，通常是json格式的yaml文件
+- inventory：ansible管理主机的清单/etc/ansible/hosts
+- modules：ansible执行命令的功能模块，多数为内置核心模块，也可以自定义
+- plugins：模块功能的补充，如连接类型插件，循环插件，变量插件，过滤插件
+- api：提供第三反程序调用的应用程序编程接口
+- ansible：组合inventory，api，modules，plugins，可以理解为ansible命令工具，核心执行工具
+
+
+
 
 
 
