@@ -44,4 +44,4 @@ ___
 - 毒性：毒液以超快的速度，是的猎物无法行动
 - 特性：带有剧毒，非常耀眼，色彩鲜艳
 
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Life/pic/snake-blue.png" /> </div><br> 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Life/pic/snker-blue.png" /> </div><br> 
