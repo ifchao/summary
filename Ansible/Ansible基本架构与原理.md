@@ -63,9 +63,32 @@ ansible-playbook用于长期规划好的，大型项目的场景，需要有前�
 
 #### Ansible安装：
 1. yum安装
+```
+yum install epel-release
+yum install ansible
+```
 2. 编译安装
+```
+yum -y install python-jinja2 PyYAML python-paramiko python-babel python-crypto
+tar xf ansible-arch.tar.gz
+cd ansible-xxarch
+python setup.py build
+python setup.py install
+mkdir /etc/ansible
+cp -r examples/* /etc/ansible
+```
 3. pip安装
+```
+#easy_install pip
+yum install python2-pip python-devel
+pip install ansible
+```
 4. git安装
+```
+git clone https://github.comj/xxxxxx
+cd 仓库名
+python setup.py 
+```
 
 #### 相关文件
 - /etc/ansible/ansible.cfg：主配置文件，配置ansible工作特性
@@ -149,10 +172,9 @@ ansible的Host-patter：
 - 执行状态
 	
 	
-	绿色：执行成功并且没有改变的操作
-	黄色：执行成功并且对目标主机做了变更的操作
-	红色：执行失败
-
+	绿色：执行成功并且没有改变的操作  
+	黄色：执行成功并且对目标主机做了变更的操作  
+	红色：执行失败  
 
 
 
