@@ -35,6 +35,9 @@
 - 02 [20181110-Docker安装](https://github.com/ihuangch/blog/blob/master/Docker/docker%E5%AE%89%E8%A3%85.md)
 - 03 [20181112-Docker命令行参数解读](https://github.com/ihuangch/blog/blob/master/Docker/docker%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0.md)
 
+### Ansible
+- 01 [20181117-Ansible基本架构与原理](https://github.com/ihuangch/blog/blob/master/Ansible/Ansible%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%8E%9F%E7%90%86.md)
+
 ### Network
 - 01 [20180806-网络划分相关](https://github.com/ihuangch/blog/blob/master/Network/%E7%BD%91%E7%BB%9C%E5%88%92%E5%88%86%E5%8F%8A%E7%9B%B8%E5%85%B3.md)
 - 02 [20180831-TCP状态切换(不仅仅三次握手四次挥手)](https://github.com/ihuangch/blog/blob/master/Network/TCP%E7%8A%B6%E6%80%81%E5%88%87%E6%8D%A2.md)
