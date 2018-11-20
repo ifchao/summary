@@ -21,4 +21,72 @@ playbook采用yaml语言编写。
 - tags：标签，指定某条任务执行，用于选择运行playbook中的部分代码，ansible具有幂等性，因此会跳过没有变化的部分，即便如此，有些代码为测试其确实没有发生变化的时间会很长。此时，如果确信没有变化，就可以通过tags跳过此些代码片段
 
 
+### hosts:
+主机列表  
+格式：  
+hosts: hostName|GroupName|host-partern  
+hosts支持ansible命令中使用的匹配主机列表的方式。  
 
+### tasks:
+任务列表  
+格式：  
+1. anction:module arguments
+2. moudle:arguments（建议使用）
+shell和command命令，无需key=value模式  
+shell:/usr/bin/echo 'hello world'  
+
+如果命令或者脚本的退出码不为0，可以使用如下方式替代：  
+```
+	tasks:
+	  - name: run this command and ignore the result
+	    shell: /usr/bin/cmd || /bin/true
+```
+或者使用ignor_errors来忽略错误信息：
+```
+	tasks:
+	  - name: run this command and ignore the resule
+	    shell: /usr/bin/cmd
+		ignore_errors: True
+```
+
+### handlers和notify结合使用触发条件
+Handlers： tasks列表，这些task与前面的task并没有本质上的不同，用于当关注的资源发生变化时，才
+会采取一定的操作。  
+Notify：此anction可用于在每个play的最后被触发，这样可以避免多次有改变发生时每次都执行指定的
+操作，仅在所有的变化发生完后，一次性的执行指定的操作。在notify中列出的操作称为handler，也
+即notify中调用handler中定义的操作。  
+```
+---
+- hosts: 192.168.56.112
+  remote_user: root
+
+  task:
+    - name: copy conf file
+	  copy: src=/root/httpd.conf dest=/etc/httpd/conf/ backup=yes
+	  notify: restart service
+	- name: start service
+	  service: name=httpd state=started enable=yes
+
+  handlers:
+    - name: restart service
+	  service: name=httpd state=restarted enabled=yes
+```
+在上面的yml文件中，如果httpd服务已经启动，修改httpd.conf，再通过copy模块，复制到远程主机的
+时候，httpd服务不会重启，这个时候就需要notify这个条件触发。notify后面的值就是handlers中
+name的名称。  
+
+### tags
+标签：任务可以通过'tags'打标签，而后可以再ansible-playbook命令上使用-t选项进行调用
+```
+---
+- hosts: 192.168.56.112
+  remote_user: root
+
+  tasks:
+    - name: copy conf file
+	  copy: src=/root/httpd.conf dest=/etc/httpd/conf/ backup=yes
+	- name: restart servie 
+	  service: name=httpd state=restart enable=yes
+	  tags: rshttpd
+```
+ansible-playbook -t rshttpd xxx.yml
