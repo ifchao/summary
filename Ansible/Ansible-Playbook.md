@@ -21,13 +21,13 @@ playbook采用yaml语言编写。
 - tags：标签，指定某条任务执行，用于选择运行playbook中的部分代码，ansible具有幂等性，因此会跳过没有变化的部分，即便如此，有些代码为测试其确实没有发生变化的时间会很长。此时，如果确信没有变化，就可以通过tags跳过此些代码片段
 
 
-### hosts:
+##### hosts:
 主机列表  
 格式：  
 hosts: hostName|GroupName|host-partern  
 hosts支持ansible命令中使用的匹配主机列表的方式。  
 
-### tasks:
+##### tasks:
 任务列表  
 格式：  
 1. anction:module arguments
@@ -49,7 +49,7 @@ shell:/usr/bin/echo 'hello world'
 		ignore_errors: True
 ```
 
-### handlers和notify结合使用触发条件
+##### handlers和notify结合使用触发条件
 Handlers： tasks列表，这些task与前面的task并没有本质上的不同，用于当关注的资源发生变化时，才
 会采取一定的操作。  
 Notify：此anction可用于在每个play的最后被触发，这样可以避免多次有改变发生时每次都执行指定的
@@ -75,7 +75,7 @@ Notify：此anction可用于在每个play的最后被触发，这样可以避免
 时候，httpd服务不会重启，这个时候就需要notify这个条件触发。notify后面的值就是handlers中
 name的名称。  
 
-### tags
+##### tags
 标签：任务可以通过'tags'打标签，而后可以再ansible-playbook命令上使用-t选项进行调用
 ```
 ---
