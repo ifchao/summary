@@ -113,7 +113,7 @@ vars:
 6. 在role中定义
 
 eg:  
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansible-var.png" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/playbook-var.png" /> </div><br>
 ```
 ---
 - hosts: test1
