@@ -90,3 +90,41 @@ name的名称。
 	  tags: rshttpd
 ```
 ansible-playbook -t rshttpd xxx.yml
+
+##### varniables
+变量，playbook中变量的使用：  
+变量名：仅能由字母，数字和下划线组成，而且只能以字母开头  
+通过{{ var }}，来引用变量  
+
+变量来源：
+1. ansible setup facts 远程主机的所有变量，且只能以字母开头
+2. 在/etc/ansible/hosts中定义
+普通变量：主机组中主机单独定义，优先级高于公共变量  
+公共组变量：针对主机组中所有主机定义统一变量
+3. 通过命令行指定变量，优先级最高
+ansible-playbook -e varname=value
+4. 在playbook中定义
+```
+vars:
+  - var1: value1
+  - var2: value2
+```
+5. 在独立的yml文件中定义
+6. 在role中定义
+
+eg:  
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansible-var.png" /> </div><br>
+```
+---
+- hosts: test1
+  remote_user: root
+
+  tasks:
+    - name: set hostname
+	  hostname: name={{ nodename }}{{ http_port }}.{{ domainname }}
+```
+
+##### templates
+template也是ansible中的一个模块
+模板，文本文件，嵌套有脚本（使用模板编程语言编写）  
+Jinja2语言，
