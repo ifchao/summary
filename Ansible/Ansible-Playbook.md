@@ -20,6 +20,7 @@ playbook采用yaml语言编写。
 - handlers和notity：结合使用，由特定条件触发的操作，满足条件方才执行，否则不执行
 - tags：标签，指定某条任务执行，用于选择运行playbook中的部分代码，ansible具有幂等性，因此会跳过没有变化的部分，即便如此，有些代码为测试其确实没有发生变化的时间会很长。此时，如果确信没有变化，就可以通过tags跳过此些代码片段
 
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/playbook.png" /> </div><br>
 
 ##### 2.1 hosts:
 主机列表  
