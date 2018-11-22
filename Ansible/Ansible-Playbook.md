@@ -22,13 +22,13 @@ playbook采用yaml语言编写。
 
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/playbook.png" /> </div><br>
 
-##### 2.1 hosts:
+#### 2.1 hosts:
 主机列表  
 格式：  
 hosts: hostName|GroupName|host-partern  
 hosts支持ansible命令中使用的匹配主机列表的方式。  
 
-##### 2.2 tasks:
+#### 2.2 tasks:
 任务列表  
 格式：  
 1. anction:module arguments
@@ -50,7 +50,7 @@ shell:/usr/bin/echo 'hello world'
 		ignore_errors: True
 ```
 
-##### 2.3 handlers和notify结合使用触发条件
+#### 2.3 handlers和notify结合使用触发条件
 Handlers： tasks列表，这些task与前面的task并没有本质上的不同，用于当关注的资源发生变化时，才
 会采取一定的操作。  
 Notify：此anction可用于在每个play的最后被触发，这样可以避免多次有改变发生时每次都执行指定的
@@ -76,7 +76,7 @@ Notify：此anction可用于在每个play的最后被触发，这样可以避免
 时候，httpd服务不会重启，这个时候就需要notify这个条件触发。notify后面的值就是handlers中
 name的名称。  
 
-##### 2.4 tags
+#### 2.4 tags
 标签：任务可以通过'tags'打标签，而后可以再ansible-playbook命令上使用-t选项进行调用
 ```
 ---
@@ -92,7 +92,7 @@ name的名称。
 ```
 ansible-playbook -t rshttpd xxx.yml
 
-##### 2.5 varniables
+#### 2.5 varniables
 变量，playbook中变量的使用：  
 变量名：仅能由字母，数字和下划线组成，而且只能以字母开头  
 通过{{ var }}，来引用变量  
@@ -128,7 +128,7 @@ eg:
 	  hostname: name={{ nodename }}{{ http_port }}.{{ domainname }}
 ```
 
-##### 2.6 templates
+#### 2.6 templates
 template也是ansible中的一个模块
 模板，文本文件，嵌套有脚本（使用模板编程语言编写）  
 Jinja2语言:  
@@ -152,7 +152,7 @@ Jinja2语言:
 只需要事先定义变量和模板，就可以用它动态产生远端的shell scripts、设定配置文件等
 。换句话说，我们可以用一份teplate来产生开发，测试，和正式环境等不同环境的设定。
 
-##### 2.7 roles
+#### 2.7 roles
 Ansible自1.2版本引入的新特性，用于层次性，结构化的组织playbook，roles能够根据层次型结构自动
 装载变量文件、tasks以及handler等。要使用roles只需要在playbook中使用include指令即可。简单来讲
 ，roles就是通过分别将变量，文件，任务，模板以及处理器放置于单独的目录中，并可以便捷的include
@@ -229,4 +229,7 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 
 上面两个例子皆摘自Ansible官方文档
 
+
+### 3. Playbook重要元素详解
+这部分详解介绍Playbook的varniables，template，和roles等
 
