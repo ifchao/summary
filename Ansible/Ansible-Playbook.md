@@ -4,8 +4,10 @@ ___
 - Description: ---
 - Create:2018-11-19 19:44:38
 ___
-
+#
+#
 ### 1. 什么是playbook
+___
 playbook是一个或多个'play'组成的列表。  
 play的主要功能在于将事先归并为一组的主机装扮成事先通过ansible中的task定义好的角色。从根本上
 来讲，所谓task无非是调用ansible的一个module。  
@@ -13,6 +15,7 @@ play的主要功能在于将事先归并为一组的主机装扮成事先通过a
 playbook采用yaml语言编写。  
 
 ### 2. playbook核心元素
+___
 - hosts：执行的远程主机列表
 - tasks：任务集
 - varniables：内置变量或自定义变量在playbook中调用
