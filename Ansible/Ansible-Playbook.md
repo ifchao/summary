@@ -161,7 +161,9 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 	某些功能需要多个playbook，通过include实现
 
 
+
 包含了一个play的playbook的例子：  
+
 ```
 ---
 - hosts: webservers
@@ -190,7 +192,9 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 	    name: httpd
 		state: restarted
 ```
+
 下面是包含了多个play的playbook
+
 ```
 ---
 - hosts: webservices
