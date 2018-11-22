@@ -105,16 +105,19 @@ ansible-playbook -t rshttpd xxx.yml
 3. 通过命令行指定变量，优先级最高
 ansible-playbook -e varname=value
 4. 在playbook中定义
+
 ```
 vars:
   var1: value1
   var2: value2
 ```
+
 5. 在独立的yml文件中定义
 6. 在role中定义
 
 eg:  
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/playbook-var.png" /> </div><br>
+
 ```
 ---
 - hosts: test1
