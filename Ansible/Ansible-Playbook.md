@@ -231,5 +231,6 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 
 
 ### 3. Playbook重要元素详解
+___
 这部分详解介绍Playbook的varniables，template，和roles等
 
