@@ -235,5 +235,10 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 
 ### 3. Playbook重要元素详解
 ___
-这部分详解介绍Playbook的varniables，template，和roles等
+这部分详解介绍Playbook的varniables，template，和roles等  
+
+#### 3.1 varniables
+关于变量命名规则前面已经提到，只能由字母，数字和下划线组成，而且只能以字母开头  
+1. 定义变量在主机清单中/etc/ansible/hosts文件
+
 
