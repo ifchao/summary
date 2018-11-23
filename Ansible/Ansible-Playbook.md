@@ -265,7 +265,7 @@ domainname: hcq.com
 
 ```
 ---
-  hosts: webser
+- hosts: webser
   remote_user: root
   vars:
     hostname: www2        # 优先级比外部文件高
@@ -276,15 +276,54 @@ domainname: hcq.com
 3. 定义变量在playbook执行文件中
 ```
 ---
-  hosts: webser
+- hosts: webser
   remote_user: root
   vars: 
     hostname: www3
 ```
 
 4. ansible setup fect中获取远程主机变量
+```
+# 查看远程主机的变量
+ansible all -m setup [-a 'filter=xxxxx']
+[root@www82 ~]# ansible 192.168.56.113 -m setup -a "filter=ansible_distribution*"
+192.168.56.113 | SUCCESS => {
+"ansible_facts": {
+        "ansible_distribution": "CentOS", 
+		    "ansible_distribution_file_parsed": true, 
+			"ansible_distribution_file_path": "/etc/redhat-release", 
+			"ansible_distribution_file_variety": "RedHat", 
+			"ansible_distribution_major_version": "7", 
+			"ansible_distribution_release": "Core", 
+		    "ansible_distribution_version": "7.4.1708"
+    }, 
+    "changed": false
+}
 
+# xxx.yml配置文件
+---
+- hosts: webser
+  remote_user: user
 
-5. 在roles中定义变量
+  tasks:
+    - name: create file
+	  file: name={{ ansible_distribution }}.abs state=touch
+
+# xxx.yml
+--- 
+- hosts: webser
+  remote_user: user
+
+  tasks:
+    - name: install httpd
+	  yum: name=httpd
+	  when: ansible_distribution == "CentOS"
+```
+
+5. 在roles中定义变量  
+在role中定义变量，实际和在文件中定义变量也是类似。  
 
 6. 通过命令行选项指定变量
+```
+ansible-playbook -e 'varname=value'
+```
