@@ -402,6 +402,13 @@ server_name {{ vhost.server_name }}
 {% endif %}
 ```
 
+#### 3.3 roles
+##### 3.3.1 roles工作流
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansile-roles.png" /> </div><br>
+
+##### 3.3.2 roles基本结构
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/roles-arch.png" /> </div><br>
+
 #### 3.4 playbook中when语句
 - 条件测试：如果需要根据变量、facts或此前任务执行的结果来作为某task执行与否的前提时，要用到条件测试，通过when语句实现，在task中使用，jinja2的语法格式
 ```
@@ -413,7 +420,24 @@ server_name {{ vhost.server_name }}
     - name: shut down system
 	  shell: /sbin/shutdown -h now
 	  when: ansible_distribution == "CentOS"
-	  
 ```
 
+#### 3.5 playbook中的循环(迭代)
+```
+---
+- hosts: localhost
+  remote_user: root
+
+  vars:
+    some_packages:
+	  - zsh
+	  - curl
+	  - httpd
+	  - php
+	  - mysql
+  tasks:
+    - name: install some packages
+	  yum: name={{ item }} state=installed
+	  with_items: "{{ some_packages }}"      # 注意必须有双引号
+```
 
