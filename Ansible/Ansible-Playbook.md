@@ -239,6 +239,50 @@ ___
 
 #### 3.1 varniables
 关于变量命名规则前面已经提到，只能由字母，数字和下划线组成，而且只能以字母开头  
-1. 定义变量在主机清单中/etc/ansible/hosts文件
+1. 定义变量在主机清单中/etc/ansible/hosts文件  
+```
+# 组内主机单独变量
+[host1]
+192.168.56.112 http_port=8080
+192.168.56.113 http_port=8090
+
+# 公共组变量
+[host1:vars]
+nodename=www
+domainname=hcq.com
+```
+
+2. 定义变量在文件中xxxx.yml  
+```
+---
+# 变量文件无需特别格式，把变量名表示即可
+http_port: 8080
+hostname: www
+domainname: hcq.com
+```
+
+```
+---
+  hosts: webser
+  remote_user: root
+  vars:
+    hostname: www2        # 优先级比外部文件高
+  vars_file:
+    - /path/to/var/xxx.yml
+```
+
+3. 定义变量在playbook执行文件中
+```
+---
+  hosts: webser
+  remote_user: root
+  vars: 
+    hostname: www3
+```
+
+4. ansible setup fect中获取远程主机变量
 
 
+5. 在roles中定义变量
+
+6. 通过命令行选项指定变量
