@@ -241,7 +241,7 @@ ___
 
 #### 3.1 varniables
 关于变量命名规则前面已经提到，只能由字母，数字和下划线组成，而且只能以字母开头  
-1. 定义变量在主机清单中/etc/ansible/hosts文件  
+##### 3.1.1 定义变量在主机清单中/etc/ansible/hosts文件  
 ```
 # 组内主机单独变量
 [host1]
@@ -254,7 +254,7 @@ nodename=www
 domainname=hcq.com
 ```
 
-2. 定义变量在文件中xxxx.yml  
+##### 3.1.2 定义变量在文件中xxxx.yml  
 ```
 ---
 # 变量文件无需特别格式，把变量名表示即可
@@ -273,7 +273,7 @@ domainname: hcq.com
     - /path/to/var/xxx.yml
 ```
 
-3. 定义变量在playbook执行文件中
+##### 3.1.3 定义变量在playbook执行文件中
 ```
 ---
 - hosts: webser
@@ -282,7 +282,7 @@ domainname: hcq.com
     hostname: www3
 ```
 
-4. ansible setup fect中获取远程主机变量
+##### 3.1.4 ansible setup fect中获取远程主机变量
 ```
 # 查看远程主机的变量
 ansible all -m setup [-a 'filter=xxxxx']
@@ -320,10 +320,13 @@ ansible all -m setup [-a 'filter=xxxxx']
 	  when: ansible_distribution == "CentOS"
 ```
 
-5. 在roles中定义变量  
+##### 3.1.5 在roles中定义变量  
 在role中定义变量，实际和在文件中定义变量也是类似。  
 
-6. 通过命令行选项指定变量
+##### 3.1.6 通过命令行选项指定变量
 ```
 ansible-playbook -e 'varname=value'
 ```
+
+#### 3.2 Templates
+
