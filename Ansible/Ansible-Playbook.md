@@ -150,6 +150,7 @@ Jinja2语言:
 
 
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/template.png" /> </div><br>
+
 由于ansible是由jinja2来实现template系统，所以使用*.j2的文件后缀名。
 每个模板文件一般为xxxx.j2  
 只需要事先定义变量和模板，就可以用它动态产生远端的shell scripts、设定配置文件等
@@ -168,6 +169,7 @@ Ansible自1.2版本引入的新特性，用于层次性，结构化的组织play
 
 
 
+#### 2.8 使用示例
 包含了一个play的playbook的例子：  
 
 ```
