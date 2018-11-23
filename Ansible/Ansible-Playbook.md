@@ -274,6 +274,7 @@ domainname: hcq.com
 ```
 
 ##### 3.1.3 定义变量在playbook执行文件中
+
 ```
 ---
 - hosts: webser
@@ -283,6 +284,7 @@ domainname: hcq.com
 ```
 
 ##### 3.1.4 ansible setup fect中获取远程主机变量
+
 ```
 # 查看远程主机的变量
 ansible all -m setup [-a 'filter=xxxxx']
@@ -324,9 +326,94 @@ ansible all -m setup [-a 'filter=xxxxx']
 在role中定义变量，实际和在文件中定义变量也是类似。  
 
 ##### 3.1.6 通过命令行选项指定变量
+
 ```
 ansible-playbook -e 'varname=value'
 ```
 
+##### 3.1.7 在playbook使用变量的一些细节
+```
+---
+- hosts: webser
+  remote_user: root
+
+  vars:
+    time: "{{ var1 }}/2"   # 需要加上双引号，对变量进行算术运算
+```
+**注意：**
+变量的优先级：
+- 命令行优先级最高
+- 主机清单中定义的连接变量
+- 大多数其他变量(play中的变量，included变量，role中的变量)
+- 主机清单中定义的其他变量
+- 系统发现的facts
+- role默认变量
+
 #### 3.2 Templates
+通过模板可以轻松的修改配置文件或者修改文件内容  
+官方文档中还有很多template的高级用法，包括过滤器等  
+
+##### 3.2.1 template for语句
+```
+{% for vhost in nginx_vhost %}
+server{
+listen {{ vhost.listen | default('80 default_server') }};
+}
+{% endfor %}
+
+
+# 示例
+# //temnginx.yml
+---
+- hosts: webser
+  remote_user: root
+  vars:
+    nainx_vhosts:
+	  - web1
+	  - web2
+	  - web3
+  tasks:
+    - name: template config
+	  template: src=nginx.conf.j2 dest=/etc/nginx/nginx.conf
+
+# //template/nginx.conf.j2
+{% for vhost in nginx_vhosts %}
+server{
+  listen {{ vhost }}
+}
+{% endfor %}
+
+# 生成的结果：
+server{
+  listen web1
+}
+server{
+  listen web2
+}
+server{
+  listen web3
+}
+```
+
+##### 3.2.2 template if语句
+```
+{% if vhost.server_name is definded %}
+server_name {{ vhost.server_name }}
+{% endif %}
+```
+
+#### 3.4 playbook中when语句
+- 条件测试：如果需要根据变量、facts或此前任务执行的结果来作为某task执行与否的前提时，要用到条件测试，通过when语句实现，在task中使用，jinja2的语法格式
+```
+---
+- hosts: webser
+  remote_user: root
+
+  tasks:
+    - name: shut down system
+	  shell: /sbin/shutdown -h now
+	  when: ansible_distribution == "CentOS"
+	  
+```
+
 
