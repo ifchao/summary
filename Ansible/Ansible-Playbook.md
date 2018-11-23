@@ -404,7 +404,7 @@ server_name {{ vhost.server_name }}
 
 #### 3.3 roles
 ##### 3.3.1 roles工作流
-<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansile-roles.png" /> </div><br>
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/ansible-roles.png" /> </div><br>
 
 ##### 3.3.2 roles基本结构
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ansible/pic/roles-arch.png" /> </div><br>
