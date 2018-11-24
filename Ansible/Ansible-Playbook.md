@@ -441,3 +441,6 @@ server_name {{ vhost.server_name }}
 	  with_items: "{{ some_packages }}"      # 注意必须有双引号
 ```
 
+#### 3.6 playbook中的引用
+##### 3.6.1 include语句
+##### 3.6.2 import语句
