@@ -1,5 +1,5 @@
-### Blog
-    学习过程中的相关总结和笔记
+## Blog
+   	学习过程中的相关总结和笔记
 	记录一下自己的学习的过程以及对于相关的知识的总结。
 	如果出现什么错误，欢迎指正。谢谢
 
@@ -38,6 +38,7 @@
 ### Ansible
 - 01 [20181117-Ansible基本架构与原理](https://github.com/ihuangch/blog/blob/master/Ansible/Ansible%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%8E%9F%E7%90%86.md)
 - 02 [20181118-Ansible模块](https://github.com/ihuangch/blog/blob/master/Ansible/Ansible%E6%A8%A1%E5%9D%97.md)
+- 03 [20181118-Ansible-Playbook](https://github.com/ihuangch/blog/blob/master/Ansible/Ansible%E6%A8%A1%E5%9D%97.md)
 
 ### Network
 - 01 [20180806-网络划分相关](https://github.com/ihuangch/blog/blob/master/Network/%E7%BD%91%E7%BB%9C%E5%88%92%E5%88%86%E5%8F%8A%E7%9B%B8%E5%85%B3.md)
@@ -53,4 +54,6 @@
 ### Git
 - 01 [20180803-Git中的一些小问题](https://github.com/ihuangch/blog/blob/master/Git/Git%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%B0%8F%E9%97%AE%E9%A2%98.md)
 - 02 [20181111-Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/Git%E5%92%8C%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6.md)
+
+### Oh,My Life
 
