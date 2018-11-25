@@ -19,7 +19,7 @@
 - 06 [20181011-文本三剑客](https://github.com/ihuangch/blog/issues/3)
 - 07 [20181012-系统监控类命令](https://github.com/ihuangch/blog/issues/4)
 - 08 [20181017-正则表达式-初级](https://github.com/ihuangch/blog/issues/5)
-- 09 [20181017-磁盘管理类命令](https://github.com/ihuangch/blog/issues/6)
+- 09 [20181125-磁盘管理类命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%A3%81%E7%9B%98%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
 
 ### Ops
 - 01 [20171120-HTTPD服务器之原理](https://github.com/ihuangch/blog/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
