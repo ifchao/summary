@@ -5,7 +5,7 @@ ___
 - Create:2018-11-22 11:45:52
 ___
 
-### 1.相关概念
+### 1 相关概念
 #### 1.1 持续集成(Continuous Integration)
 大师Mratin Fowler对持续集成是这样定义的：持续集成是一种软件开发实践，即团队开发成员经常集成
 他们的工作，通常每个成员至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化
@@ -38,5 +38,38 @@ ___
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/cd2.png" /> </div><br> 
 
 
-### 2.Jenkins
+### 2 Jenkins
+Jenkins是一个独立的开源自动化服务器。可以用于自动化各种任务。如构建，测试和部署软件。  
+#### 2.1 安装Jenkins
+##### 2.1.1 安装要求：  
+1. Java8环境
+2. 1Gram以上
+##### 2.1.2 安装Java8
+通过rpm包安装。  
+通过oracle官网下载jdk8相关版本
+```
+# rpm -ivh jdk-8u191-linux-x64.rpm
+# java -version                     # 验证是否安装成功，查看对应版本
+# cat /etc/profile.d/java8.sh       # 此文件自己创建
+
+[root@www82 ~]# cat /etc/profile.d/java8.sh 
+JAVA_HOME=/usr/java/jdk1.8.0_191-amd64/
+JRE_HOME=/usr/java/jdk1.8.0_191-amd64/jre
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib
+export JAVA_HOME JRE_HOME PATH CLASSPATH
+
+# ls /usr/java/                     # 判断JAVA_HOME等路径是否正确
+# source /etc/profile.d/java8.sh    # 重新载入配置文件
+# echo $PATH						# 判断环境变量是否加入成功
+[root@www82 ~]# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/java/jdk1.8.0_191-amd64//bin:/usr/java/jdk1.8.0_191-amd64/jre/bin:/root/bin
+```
+##### 2.1.3 安装Jenkins
+```
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+yum install jenkins
+systemctl start jenkins
+```
 
