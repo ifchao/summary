@@ -70,6 +70,8 @@ export JAVA_HOME JRE_HOME PATH CLASSPATH
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 yum install jenkins
-systemctl start jenkins
+systemctl start jenkins  #
+ss -ntl | grep 8080
 ```
 
+##### 
