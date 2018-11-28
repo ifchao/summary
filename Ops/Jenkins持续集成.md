@@ -40,11 +40,28 @@ ___
 
 ### 2 Jenkins
 Jenkins是一个独立的开源自动化服务器。可以用于自动化各种任务。如构建，测试和部署软件。  
-#### 2.1 安装Jenkins
-##### 2.1.1 安装要求：  
+#### 2.1 开发流程
+##### 2.1.1 传统开发上线流程
+需求分析->原型设计->开发代码->提交测试->内网部署->确认上线->备份数据(外网)->外网更新->最终测试  
+如果发现外网部署的代码有移除，需要及时回滚。  
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/code-old.png" /> </div><br> 
+##### 2.1.2 主流开发上线流程
+通过Hudson/Jenkins工具平台实现全自动部署+测试，Jenkins是一个可扩展的持续集成引擎，是一个开源项目
+目的提供一个开发易用的软件平台，使软件的持续集成变成可能。Jenkins非常易于安装和配置，简单易用。  
+简单来说方便如下人员:  
+1. 开发人员：写好代码，不需要自己进行源码编译，打包等工作，直接将代码分支放在svn/git仓库即可。  
+2. 运维人员：减轻人工干预的错误率，同时解放运维人员繁杂的上传代码，手动备份，更新。
+3. 测试人员：可以通过jenkins进行简单的代码及网站测试。  
+持续集成组件：  
+1. 一个自动构建过程，包括自动编译，分发，部署和测试。
+2. 一个代码存储库，即需要版本控制软件来保障代码的可维护性，同时作为构建过程的素材库，如svn，git。
+3. 一个jenkins持续集成服务器。
+
+#### 2.2 安装Jenkins
+##### 2.2.1 安装要求：  
 1. Java8环境
 2. 1Gram以上
-##### 2.1.2 安装Java8
+##### 2.2.2 安装Java8
 通过rpm包安装。  
 通过oracle官网下载jdk8相关版本
 ```
@@ -65,7 +82,7 @@ export JAVA_HOME JRE_HOME PATH CLASSPATH
 [root@www82 ~]# echo $PATH
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/java/jdk1.8.0_191-amd64//bin:/usr/java/jdk1.8.0_191-amd64/jre/bin:/root/bin
 ```
-##### 2.1.3 安装Jenkins
+##### 2.2.3 安装Jenkins
 ```
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
@@ -74,4 +91,16 @@ systemctl start jenkins  #
 ss -ntl | grep 8080
 ```
 
-##### 
+##### 2.2.4 Jenkins-Maven
+maven工具，对ant工具的进一步改进，在make工具中，如果需要编译某些源文件，首先安装编译器等工具，
+有时候需要不同版本的编译器，在java编译器需要不同的各种包的支持，如果把每个包都下载下来，在
+makefile中进行配置制定，当需要的包很多的时候，很难管理。  
+maven像make一样，是一个构建(build)工具，maven可以控制编译，控制连接，可以生成各种报告，进行测试，
+通过脚本对maven进行控制，实现这些流程控制。  
+maven项目对象模型POM(project object model)可以通过一小段描述信息，来管理项目的构建，报告和文档的
+软件项目管理工具。Maven除了以程序构建能力为特色外，还提供高级项目管理工具。  
+pom是maven项目中的文件，使用xml表示，名称叫做pom.xml。在maven中，当谈到project的时候，不仅仅是
+一堆包含代码的文件。一个project往往包含一个配置文件，包括了与开发者有关的缺陷跟踪系统，组织，与
+许可，项目的url，项目依赖，以及其他。包含了所有与这个项目相关的东西。事实上，在maven世界中，
+project可以什么都没有，甚至没有代码，但是必须包含pom.xml文件。  
+
