@@ -44,8 +44,13 @@ Jenkins是一个独立的开源自动化服务器。可以用于自动化各种�
 ##### 2.1.1 传统开发上线流程
 需求分析->原型设计->开发代码->提交测试->内网部署->确认上线->备份数据(外网)->外网更新->最终测试  
 如果发现外网部署的代码有移除，需要及时回滚。  
+
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/code-old.png" /> </div><br> 
+
 ##### 2.1.2 主流开发上线流程
+
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/code-new.png" /> </div><br> 
+
 通过Hudson/Jenkins工具平台实现全自动部署+测试，Jenkins是一个可扩展的持续集成引擎，是一个开源项目
 目的提供一个开发易用的软件平台，使软件的持续集成变成可能。Jenkins非常易于安装和配置，简单易用。  
 简单来说方便如下人员:  
