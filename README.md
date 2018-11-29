@@ -30,6 +30,7 @@
 - 05 [20180910-微服务架构](https://github.com/ihuangch/blog/blob/master/Ops/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84.md)
 - 06 [20180913-FTP服务原理](https://github.com/ihuangch/blog/issues/1)
 - 07 [20181109-ssh隧道](https://github.com/ihuangch/blog/blob/master/Ops/ssh%E9%9A%A7%E9%81%93.md)
+- 08 [20181122-Jenkins持续集成](https://github.com/ihuangch/blog/blob/master/Ops/Jenkins%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90.md)
 
 ### Docker
 - 01 [20181107-Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/docker%E5%9F%BA%E7%A1%80.md)
