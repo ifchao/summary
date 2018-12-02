@@ -16,7 +16,7 @@
 - 03 [20180810-Linux终端下的一些快捷键](https://github.com/ihuangch/blog/blob/master/Linux/Linux%E7%BB%88%E7%AB%AF%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE.md)
 - 04 [20180913-网络相关命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
 - 05 [20180918-文本处理类命令](https://github.com/ihuangch/blog/blob/master/Linux/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4.md)
-- 06 [20181011-文本三剑客](https://github.com/ihuangch/blog/issues/3)
+- 06 [20181011-文本三剑客](https://github.com/ihuangch/blog/blob/master/Linux/%E6%96%87%E6%9C%AC%E4%B8%89%E5%89%91%E5%AE%A2.md)
 - 07 [20181012-系统监控类命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%B3%BB%E7%BB%9F%E7%9B%91%E6%8E%A7%E7%B1%BB%E5%91%BD%E4%BB%A4.md)
 - 08 [20181017-正则表达式-初级](https://github.com/ihuangch/blog/issues/5)
 - 09 [20181125-磁盘管理类命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%A3%81%E7%9B%98%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
