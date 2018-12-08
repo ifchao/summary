@@ -141,15 +141,16 @@ where col1 is NULL
 | BETWEEN | 在两个值之间 |
 | IS NULL | 为NULL值 |
 
-**AND OR**用于连接多个过滤条件，优先处理AND必要时可以用()来决定优先级  
-**IN**用于匹配一组值，其后也可以接一个 SELECT 子句，从而匹配子查询得到的一组值  
-**NOT**用于否定一个条件
+**AND OR** 用于连接多个过滤条件，优先处理AND必要时可以用()来决定优先级  
+**IN** 用于匹配一组值，其后也可以接一个 SELECT 子句，从而匹配子查询得到的一组值  
+**NOT** 用于否定一个条件
 
 ```sql
 select * 
 from mytable 
 where col1 < 1000 and col2 > 30;
 ```
+
 ```sql
 select *
 from mytable
