@@ -21,6 +21,8 @@
 - [正则表达式-初级](https://github.com/ihuangch/blog/issues/5)
 - [磁盘管理类命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%A3%81%E7%9B%98%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4.md)
 - [系统管理命令](https://github.com/ihuangch/blog/blob/master/Linux/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4.md)
+- [磁盘RAID管理](https:)
+- [磁盘管理之LVM](https:)
 
 ### Ops
 - [HTTPD服务器之原理](https://github.com/ihuangch/blog/blob/master/Ops/httpd%E7%9F%A5%E8%AF%86.md)
