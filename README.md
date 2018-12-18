@@ -1,7 +1,7 @@
 ## Blog
    	学习过程中的相关总结和笔记
 	记录一下自己的学习的过程以及对于相关的知识的总结。
-	如果出现什么错误，欢迎指正。谢谢
+	如果出现错误，欢迎指正。谢谢
 
 ### Linux
 - [tcpdump使用](https://github.com/ihuangch/blog/blob/master/Linux/20180606-tcpdump使用.md)
