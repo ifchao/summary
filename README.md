@@ -31,7 +31,7 @@
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
 - [Docker安装](https://github.com/ihuangch/blog/blob/master/Docker/20181110-docker安装.md)
-- [Docker命令行参数解读](https://github.com/ihuangch/blog/blob/master/Dokcer/20181114-docker命令行参数.md)
+- [Docker命令行参数解读](https://github.com/ihuangch/blog/blob/master/Docker/20181114-docker命令行参数.md)
 - [Docker容器化思维](https://github.com/ihuangch/blog/blob/master/Docker/20181126-docker容器化思维.md)
 
 ### Ansible
@@ -45,7 +45,7 @@
 - [HTTPS协议原理](https://github.com/ihuangch/blog/blob/master/Network/20181103-https协议原理.md)
 
 ### MySQL
-- [MySQL基本总结]()
+- [MySQL基本总结](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
 
 ### Python
 - [Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
