@@ -17,6 +17,7 @@
 - [系统管理命令](https://github.com/ihuangch/blog/blob/master/Linux/20181127-系统管理命令.md)
 - [磁盘RAID管理](https://github.com/ihuangch/blog/blob/master/Linux/20181127-磁盘RAID管理.md)
 - [磁盘管理之LVM](https://github.com/ihuangch/blog/blob/master/Linux/20181209-磁盘管理之LVM.md)
+- [nc和nmap命令](https://github.com/ihuangch/blog/blob/master/Linux/20181220-nc命令和nmap命令.md)
 
 ### Ops
 - [HTTPD服务器之原理](https://github.com/ihuangch/blog/blob/master/Ops/20180524-httpd知识.md)
