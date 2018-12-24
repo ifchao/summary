@@ -18,6 +18,7 @@
 - [磁盘RAID管理](https://github.com/ihuangch/blog/blob/master/Linux/20181208-磁盘RAID管理.md)
 - [磁盘管理之LVM](https://github.com/ihuangch/blog/blob/master/Linux/20181209-磁盘管理之LVM.md)
 - [nc和nmap命令](https://github.com/ihuangch/blog/blob/master/Linux/20181220-nc命令和nmap命令.md)
+- [ss命令和netstat命令.md](https://github.com/ihuangch/blog/blob/master/Linux/20181224-ss命令和netstat命令.md)
 - [Xshell下vim粘贴缩进问题](https://github.com/ihuangch/blog/blob/master/Linux/20181224-xshell下vim复制粘贴问题.md)
 
 ### Ops
