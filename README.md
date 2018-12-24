@@ -28,6 +28,7 @@
 - [FTP服务原理]()
 - [ssh隧道](https://github.com/ihuangch/blog/blob/master/Ops/20181113-ssh隧道.md)
 - [Jenkins持续集成](https://github.com/ihuangch/blog/blob/master/Ops/20181129-Jenkins持续集成.md)
+- [zabbix基础与安装](https://github.com/ihuangch/blog/blob/master/Zabbix/20181203-zabbix基础与安装.md)
 
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
