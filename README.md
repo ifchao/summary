@@ -20,7 +20,7 @@
 - [nc和nmap命令](https://github.com/ihuangch/blog/blob/master/Linux/20181220-nc命令和nmap命令.md)
 - [ss命令和netstat命令.md](https://github.com/ihuangch/blog/blob/master/Linux/20181224-ss命令和netstat命令.md)
 - [Xshell下vim粘贴缩进问题](https://github.com/ihuangch/blog/blob/master/Linux/20181224-xshell下vim复制粘贴问题.md)
-
+- [Linux系统负载.md](https://github.com/ihuangch/blog/blob/master/Linux/20181225-Linux系统负载.md)
 ### Ops
 - [HTTPD服务器之原理](https://github.com/ihuangch/blog/blob/master/Ops/20180524-httpd知识.md)
 - [DNS原理](https://github.com/ihuangch/blog/blob/master/Ops/20180625-DNS原理.md)
