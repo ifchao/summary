@@ -21,7 +21,9 @@
 - [ss命令和netstat命令.md](https://github.com/ihuangch/blog/blob/master/Linux/20181224-ss命令和netstat命令.md)
 - [Xshell下vim粘贴缩进问题](https://github.com/ihuangch/blog/blob/master/Linux/20181224-xshell下vim复制粘贴问题.md)
 - [Linux系统负载.md](https://github.com/ihuangch/blog/blob/master/Linux/20181225-Linux系统负载.md)
-- [pwdx命令.md](https://github.com/ihuangch/blog/blob/master/Linux/20181225-pwdx命令.md)
+- [pwdx命令](https://github.com/ihuangch/blog/blob/master/Linux/20181225-pwdx命令.md)
+- [crontab中特殊符号](https://github.com/ihuangch/blog/blob/master/Linux/20181226-crontab中特殊符号.md)
+
 
 ### Ops
 - [HTTPD服务器之原理](https://github.com/ihuangch/blog/blob/master/Ops/20180524-httpd知识.md)
