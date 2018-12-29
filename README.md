@@ -53,7 +53,10 @@
 - [HTTPS协议原理](https://github.com/ihuangch/blog/blob/master/Network/20181103-https协议原理.md)
 
 ### MySQL
-- [MySQL基本总结](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
+- [SQL语句](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
+- [MySQL事务](https://github.com/ihuangch/blog/blob/master/Mysql/20181223-MySQL事务.md)
+- [MySQL工作模式和架构](https://github.com/ihuangch/blog/blob/master/Mysql/20181226-MySQL工作模式和架构.md)
+- [MySQL配置文件和变量](https://github.com/ihuangch/blog/blob/master/Mysql/20181226-MySQL配置文件和变量.md)
 
 ### Python
 - [Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
