@@ -23,6 +23,7 @@
 - [Linux系统负载.md](https://github.com/ihuangch/blog/blob/master/Linux/20181225-Linux系统负载.md)
 - [pwdx命令](https://github.com/ihuangch/blog/blob/master/Linux/20181225-pwdx命令.md)
 - [crontab中特殊符号](https://github.com/ihuangch/blog/blob/master/Linux/20181226-crontab中特殊符号.md)
+- [重定向符号总结](https://github.com/ihuangch/blog/blob/master/Linux/20181229-重定向符号总结.md)
 
 
 ### Ops
