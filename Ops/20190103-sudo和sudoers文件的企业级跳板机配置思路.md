@@ -235,3 +235,17 @@ root	ALL=(ALL) 	ALL
 ## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
 #includedir /etc/sudoers.d
 ```
+
+
+#### 常见解决方案
+开发使用一个公用的账号登录主机，运维使用ops登录主机，在跳板机进行组的分类，
+如果用户是dev组，则通过跳板机登录目标主机的用户默认为:dev
+每台主机的sudoer文件添加相关的规则(大致规则，一些细节自己根据需求改动)
+```bash
+Cmnd_Alias NCMD=/sbin/*, /usr/sbin/*, /bin/dd, /usr/bin/passwd
+Cmnd_Alias NSU=/bin/su
+
+DEV ALL=(ALL) ALL,!NSU,!NCMD
+OPS ALL=(ALL) NOPASSWD: ALL
+
+```
