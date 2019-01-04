@@ -24,6 +24,8 @@
 - [pwdx命令](https://github.com/ihuangch/blog/blob/master/Linux/20181225-pwdx命令.md)
 - [crontab中特殊符号](https://github.com/ihuangch/blog/blob/master/Linux/20181226-crontab中特殊符号.md)
 - [重定向符号总结](https://github.com/ihuangch/blog/blob/master/Linux/20181229-重定向符号总结.md)
+- [dd命令.md](https://github.com/ihuangch/blog/blob/master/Linux/20190102-dd命令.md)
+- [分区后建立swap分区并挂载](https://github.com/ihuangch/blog/blob/master/Linux/20190102-分区后建立swap分区并挂载.md)
 
 
 ### Ops
@@ -36,6 +38,7 @@
 - [ssh隧道](https://github.com/ihuangch/blog/blob/master/Ops/20181113-ssh隧道.md)
 - [Jenkins持续集成](https://github.com/ihuangch/blog/blob/master/Ops/20181129-Jenkins持续集成.md)
 - [zabbix基础与安装](https://github.com/ihuangch/blog/blob/master/Zabbix/20181203-zabbix基础与安装.md)
+- [sudo和sudoers文件的企业级跳板机配置思路](https://github.com/ihuangch/blog/blob/master/Zabbix/20190103-sudo和sudoers文件的企业级跳板机配置思路.md)
 
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
