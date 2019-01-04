@@ -13,9 +13,28 @@ Linux 内核提供了一种通过/proc文件系统在运行时访问内核内部
 用户和应用程序可以通过proc得到系统的信息，并可以改变内核的某些参数。由于系统的信息，如进程，
 是动态改变的，所以用户或应用程序读取proc文件时，proc文件系统是动态从系统内核读取所需信息并
 提交的。  
-/proc下面的目录:  
-- net: 依赖内核配置
-- sys: 可写的，通过它来访问或修改内核的参数
-- scsi: 依赖内核配置，如果系统不支持scsi，则scsi目录不存在
 
+可以使用man proc查看相关文档
+或者安装`yum install man-pages`查看
+#### /proc下面常用目录:
+- sys: 可写的目录，通过这个目录可以修改一些内核参数和/etc/sysctl.conf对应
+- 数字目录: 每个数字代表进程号，通过这个目录查询进程的相关信息
+
+
+#### /proc 下面常用的文件
+- /proc/cmdline: 启动时传递给kernel的参数信息
+- /proc/cpuinfo: cpu信息
+- /proc/devices: 已经加载的设备并分类
+- /proc/interrupts: 每个IRQ中断数
+- /proc/modules: 所有加载到内核的模块列表
+- /proc/mounts: 系统中使用的所有挂载
+- /proc/stat: 所有的CPU活动信息
+- /proc/swaps: 交换空间的使用情况
+
+
+#### /proc目录中进程N的信息
+- /proc/N: PID为N的进程信息
+- /proc/N/cmdline: 进程启动命令
+- /proc/N/cwd: 链接到进程当前目录
+-
 
