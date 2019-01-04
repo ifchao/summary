@@ -242,6 +242,7 @@ root	ALL=(ALL) 	ALL
 如果用户是dev组，则通过跳板机登录目标主机的用户默认为:dev
 每台主机的sudoer文件添加相关的规则(大致规则，一些细节自己根据需求改动)
 ```bash
+defaults:ops !requiretty
 Cmnd_Alias NCMD=/sbin/*, /usr/sbin/*, /bin/dd, /usr/bin/passwd
 Cmnd_Alias NSU=/bin/su
 
