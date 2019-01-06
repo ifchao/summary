@@ -26,6 +26,7 @@
 - [重定向符号总结](https://github.com/ihuangch/blog/blob/master/Linux/20181229-重定向符号总结.md)
 - [dd命令](https://github.com/ihuangch/blog/blob/master/Linux/20190102-dd命令.md)
 - [分区后建立swap分区并挂载](https://github.com/ihuangch/blog/blob/master/Linux/20190102-分区后建立swap分区并挂载.md)
+- [proc和sys目录](https://github.com/ihuangch/blog/blob/master/Linux/20190104-proc和sys目录.md)
 
 
 ### Ops
