@@ -27,6 +27,7 @@
 - [dd命令](https://github.com/ihuangch/blog/blob/master/Linux/20190102-dd命令.md)
 - [分区后建立swap分区并挂载](https://github.com/ihuangch/blog/blob/master/Linux/20190102-分区后建立swap分区并挂载.md)
 - [proc和sys目录](https://github.com/ihuangch/blog/blob/master/Linux/20190104-proc和sys目录.md)
+- [启动配置文件得执行过程](https://github.com/ihuangch/blog/blob/master/Linux/20190107-启动配置文件得执行过程.md)
 
 
 ### Ops
