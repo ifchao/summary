@@ -40,8 +40,8 @@
 - [ssh隧道](https://github.com/ihuangch/blog/blob/master/Ops/20181113-ssh隧道.md)
 - [Jenkins持续集成](https://github.com/ihuangch/blog/blob/master/Ops/20181129-Jenkins持续集成.md)
 - [zabbix基础与安装](https://github.com/ihuangch/blog/blob/master/Zabbix/20181203-zabbix基础与安装.md)
-- [sudo和sudoers文件的企业级跳板机配置思路](https://github.com/ihuangch/blog/blob/master/Zabbix/20190103-sudo和sudoers文件的企业级跳板机配置思路.md)
-- [gitlab安装配置与管理](https://github.com/ihuangch/blog/blob/master/Zabbix/20190107-gitlab安装配置与管理.md)
+- [sudo和sudoers文件的企业级跳板机配置思路](https://github.com/ihuangch/blog/blob/master/Ops/20190103-sudo和sudoers文件的企业级跳板机配置思路.md)
+- [gitlab安装配置与管理](https://github.com/ihuangch/blog/blob/master/Ops/20190107-gitlab安装配置与管理.md)
 
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
