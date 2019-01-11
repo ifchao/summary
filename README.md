@@ -28,6 +28,8 @@
 - [分区后建立swap分区并挂载](https://github.com/ihuangch/blog/blob/master/Linux/20190102-分区后建立swap分区并挂载.md)
 - [proc和sys目录](https://github.com/ihuangch/blog/blob/master/Linux/20190104-proc和sys目录.md)
 - [启动配置文件得执行过程](https://github.com/ihuangch/blog/blob/master/Linux/20190107-启动配置文件得执行过程.md)
+- [lsof命令查看进程打开哪些文件](https://github.com/ihuangch/blog/blob/master/Linux/20190111-lsof命令查看进程打开哪些文件.md)
+- [Linux未使用lvm的情况下进行分区扩容(不丢失数据)](https://github.com/ihuangch/blog/blob/master/Linux/20190111-Linux未使用lvm的情况下进行分区扩容.md)
 
 
 ### Ops
