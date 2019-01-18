@@ -44,6 +44,8 @@
 - [zabbix基础与安装](https://github.com/ihuangch/blog/blob/master/Zabbix/20181203-zabbix基础与安装.md)
 - [sudo和sudoers文件的企业级跳板机配置思路](https://github.com/ihuangch/blog/blob/master/Ops/20190103-sudo和sudoers文件的企业级跳板机配置思路.md)
 - [gitlab安装配置与管理](https://github.com/ihuangch/blog/blob/master/Ops/20190107-gitlab安装配置与管理.md)
+- [线上gitlab服务器磁盘扩容操作步骤](https://github.com/ihuangch/blog/blob/master/Ops/20190117-线上gitlab服务器磁盘扩容操作步骤.md)
+- [ELK之Lucene](https://github.com/ihuangch/blog/blob/master/Ops/20190114-ELK之Lucene.md)
 
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
@@ -86,4 +88,5 @@
 - [Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/20181111-Git和版本控制.md)
 
 ### Oh,My Life
+- [poetry](https://github.com/ihuangch/blog/blob/master/Life/20181125-poetry.md)
 
