@@ -72,6 +72,7 @@
 - [MySQL索引](https://github.com/ihuangch/blog/blob/master/Mysql/20190108-MySQL索引.md)
 - [MySQL存储引擎](https://github.com/ihuangch/blog/blob/master/Mysql/20190109-MySQL存储引擎.md)
 - [MySQL用户管理和权限设置](https://github.com/ihuangch/blog/blob/master/Mysql/20190110-MySQL用户管理和权限设置.md)
+- [MySQL日志](https://github.com/ihuangch/blog/blob/master/Mysql/20190121-MySQL日志.md)
 
 ### Python
 - [Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
