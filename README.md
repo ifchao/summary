@@ -90,4 +90,5 @@
 
 ### Oh,My Life
 - [poetry](https://github.com/ihuangch/blog/blob/master/Life/20181125-poetry.md)
+- [职业感想](https://github.com/ihuangch/blog/blob/master/Life/20181126-career-advice.md)
 
