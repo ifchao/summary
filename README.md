@@ -65,7 +65,7 @@
 - [HTTPS协议原理](https://github.com/ihuangch/blog/blob/master/Network/20181103-https协议原理.md)
 - [计算机网络](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机网络.md)
 
-### MySQL
+### MySQL|NoSQL
 - [SQL语句](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
 - [MySQL事务](https://github.com/ihuangch/blog/blob/master/Mysql/20181223-MySQL事务.md)
 - [MySQL工作模式和架构](https://github.com/ihuangch/blog/blob/master/Mysql/20181226-MySQL工作模式和架构.md)
@@ -75,6 +75,7 @@
 - [MySQL存储引擎](https://github.com/ihuangch/blog/blob/master/Mysql/20190109-MySQL存储引擎.md)
 - [MySQL用户管理和权限设置](https://github.com/ihuangch/blog/blob/master/Mysql/20190110-MySQL用户管理和权限设置.md)
 - [MySQL日志](https://github.com/ihuangch/blog/blob/master/Mysql/20190121-MySQL日志.md)
+- [Redis](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/Redis.md)
 
 ### Python
 - [Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
