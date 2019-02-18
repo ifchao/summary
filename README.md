@@ -30,6 +30,7 @@
 - [启动配置文件得执行过程](https://github.com/ihuangch/blog/blob/master/Linux/20190107-启动配置文件得执行过程.md)
 - [lsof命令查看进程打开哪些文件](https://github.com/ihuangch/blog/blob/master/Linux/20190111-lsof命令查看进程打开哪些文件.md)
 - [Linux未使用lvm的情况下进行分区扩容(不丢失数据)](https://github.com/ihuangch/blog/blob/master/Linux/20190111-Linux未使用lvm的情况下进行分区扩容.md)
+- [计算机操作系统](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机操作系统.md)
 
 
 ### Ops
@@ -62,7 +63,7 @@
 - [网络划分相关](https://github.com/ihuangch/blog/blob/master/Network/20180915-网络划分相关.md)
 - [TCP状态切换](https://github.com/ihuangch/blog/blob/master/Network/20180918-TCP状态切换.md)
 - [HTTPS协议原理](https://github.com/ihuangch/blog/blob/master/Network/20181103-https协议原理.md)
-- [计算机网络](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
+- [计算机网络](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机网络.md)
 
 ### MySQL
 - [SQL语句](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
