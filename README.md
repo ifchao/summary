@@ -31,6 +31,8 @@
 - [lsof命令查看进程打开哪些文件](https://github.com/ihuangch/blog/blob/master/Linux/20190111-lsof命令查看进程打开哪些文件.md)
 - [Linux未使用lvm的情况下进行分区扩容(不丢失数据)](https://github.com/ihuangch/blog/blob/master/Linux/20190111-Linux未使用lvm的情况下进行分区扩容.md)
 - [计算机操作系统](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机操作系统.md)
+- [shell编程中参数扩展](https://github.com/ihuangch/blog/blob/master/Linux/20190218-shell编程中参数扩展.md)
+- [shell中while-done后接重定向用法](https://github.com/ihuangch/blog/blob/master/Linux/20190220-shell中while-done后接重定向用法.md)
 
 
 ### Ops
