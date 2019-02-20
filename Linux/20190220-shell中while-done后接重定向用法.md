@@ -10,4 +10,22 @@ while读取文件的方法:
 - 1.将文件的内容通过管道(|)或重定向(<)的方式传给while
 - 2.while中调用read将文件内容读取出来，并赋值给read后跟随的变量(变量可以是多个，根据每行的内容可以改变)
 
+
+
 #### 管道传输文件内容
+```bash
+cat test.txt | while read LINE
+do
+	echo $LINE
+done
+# 同样可以使用find，grep等命令输出指定文件内容进入while
+```
+
+#### while done 重定向
+```bash
+while read LINE
+do
+	echo $LINE
+done < test.txt
+```
+
