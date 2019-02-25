@@ -33,6 +33,7 @@
 - [计算机操作系统](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机操作系统.md)
 - [shell编程中参数扩展](https://github.com/ihuangch/blog/blob/master/Linux/20190218-shell编程中参数扩展.md)
 - [shell中while-done后接重定向用法](https://github.com/ihuangch/blog/blob/master/Linux/20190220-shell中while-done后接重定向用法.md)
+- [shell中条件测试](https://github.com/ihuangch/blog/blob/master/Linux/20190222-shell中条件测试.md)
 
 
 ### Ops
