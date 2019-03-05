@@ -3,6 +3,8 @@
 	记录一下自己的学习的过程以及对于相关的知识的总结。
 	如果出现错误，欢迎指正。谢谢
 
+## 
+	20190405，现在住的地方距离公司太远了，每天上班需要花费2个小时。还有好多笔记和总结没有来的及整理。
 ### Linux
 - [tcpdump使用](https://github.com/ihuangch/blog/blob/master/Linux/20180606-tcpdump使用.md)
 - [CentOS6更换网卡后无法启动网卡的排查](https://github.com/ihuangch/blog/blob/master/Linux/20180803-CentOS6更换网卡后无法启动网卡的排查.md)
