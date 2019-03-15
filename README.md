@@ -93,7 +93,7 @@
 - [SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
 
 ### Git
-- [Git中的一些小问题](https://github.com/ihuangch/blog/blob/master/Git/20180813-Git中遇到的小问题.md)
+- [Git中的一些小问题](https://github.com/ihuangch/blog/blob/master/Git/20180803-Git中遇到的小问题.md)
 - [Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/20181111-Git和版本控制.md)
 
 ### Oh,My Life
