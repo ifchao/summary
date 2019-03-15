@@ -33,4 +33,36 @@ max_execution_time = 300
 
 ```
 
+####3. nginx 配置
+```bash
+# 在http字段内添加一下配置
+	proxy_buffer_size  128k;
+    proxy_buffers   32 32k;
+    proxy_busy_buffers_size 128k;
+
+
+# 在conf.d/zabbix.conf配置
+	server
+{
+	listen 80;
+#	server_name 192.168.30.31;
+	server_name monitor-zx.cdd.group;
+	index index.php;
+	root /usr/share/zabbix/;
+	access_log /var/log/nginx/zabbix_access.log main;
+	error_log /var/log/nginx/zabbix_error.log;
+
+	location ~ .*\.php$ {
+		include fastcgi_params;
+		fastcgi_pass 127.0.0.1:9000;
+#		fastcgi_pass unix:/run/php-fpm/php-fpm.pid;
+		fastcgi_index index.php;
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+		fastcgi_buffer_size 128k;
+		fastcgi_buffers 4 256k;
+		fastcgi_busy_buffers_size 256k;
+	}
+}
+```
 
