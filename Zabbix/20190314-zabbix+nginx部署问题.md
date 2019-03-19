@@ -66,3 +66,13 @@ max_execution_time = 300
 }
 ```
 
+####4. zabbix配置
+相关配置自行修改
+```bash
+server=IP1,IP2
+serveractive=IP1
+serveractive=IP2
+DBUser=
+DBName=
+
+```
