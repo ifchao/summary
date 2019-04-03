@@ -26,6 +26,7 @@ web访问入口的时候，需要给予这个目录对应的权限。
 ```bash
 shell> chmod -R 777 /var/lib/php/session/
 
+post_max_size = 16M
 session.save_handler = /var/lib/php/session  # 解决无法点击下一步的问题
 date.timezone = "Asia/Shanghai"				 # 时区设置
 max_input_time = 300
