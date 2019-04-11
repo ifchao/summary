@@ -120,4 +120,4 @@ Kubernetes集群的可以通过Web UI来管理集群中的应用和集群自身
 容器和节点的性能监控和分析系统。逐渐使用Prometheus结合其他组件取代
 ##### 2.3.5 Ingress Controller
 Service是一组工作于传输层的负载均衡器，而Ingress是在应用层实现的HTTP（s）负载均衡机制。不过，Ingress资源自身并不能进行
-“流量穿透”，它仅是
+“流量穿透”，它仅是一组路由的集合，这些规则需要通过Ingress控制器发挥作用。目前可以使用Nginx、Traefik、Envoy、Haproxy等。
