@@ -75,3 +75,49 @@ Pod对象对象提供给外部用户访问，则需要为其请求流量打开�
 也是这类通道的实现方式之一。
 
 
+### 2. Kubernetes集群组件
+#### 2.1 Master组件
+Kubernetes集群控制由多个组件组成，这些组件可以统一运行于单一Master节点，也可以通过多副本的模式同时运行于多个节点，
+为Master提供高可用功能。甚至可以运行于Kubernetes集群自身之上。主要有以下组件：
+##### 2.1.1 API Server
+API Server负责输出RestFul风格的Kubernets API，它是发往集群的所有Rest操作命令的接入点，并负责接收、校验并响应所有
+的REST请求，结果状态存储于etcd中。因此，API Server是整个集群的网关。
+##### 2.1.2 集群状态存储（Cluster State Store----etcd）
+Kubernetes集群的所有状态信息都需要持久存储于存储系统etcd中，etcd是由CoreOS基于Raft协议开发的分布式key-value存储，
+可用于服务发现，共享配置和一致性保障等（如数据库主节点选择，分布式锁等）。因此etcd是独立的组件，并不隶属于Kubernetes
+集群自身。生产环境中需要部署etcd集群，确保服务的高可用性。  
+同时etcd还提供监控（watch）功能，监听推送和变更。在Kubernetes集群中，etcd的变化，会通知API Server，并由其通过
+watch API向客户端输出。
+##### 2.1.3 控制管理器（Controller Manager）
+Kubernetes中，集群级别的大多数功能都是由几个被称为控制器的进程执行实现的，这几个进程被集成于kube-controller-manager
+守护进程中。由控制器完成的主要功能包括：
+- 生命周期功能：包括Namespace创建和生命周期、Event垃圾回收、Pod终止相关的垃圾回收、级联垃圾回收和Node垃圾回收。
+- API业务逻辑：如ReplicaSet执行Pod扩展等
+
+##### 2.1.4 调度器（Scheduler）
+Kubernetes是用于部署和管理大规模容器应用的平台，API Server确认Pod对象的创建请求之后，便需要由Scheduler根据集群内各节点
+的可用资源状态，以及要运行的容器的资源需求做出调度决策。Kubernetes支持用户自定义调度器
+
+
+#### 2.2 Node组件
+Node负责提供运行容器的各种依赖环境，并接收Master的管理
+##### 2.2.1 Kubelet
+Node的核心代理程序，Kubelet是运行于工作节点上面的守护进程，它从API Server接收关于Pod对象的配置信息并确保它们处于目标状态。
+kubelet会在API Server上注册当前工作节点，定期向Master回报节点资源使用情况，并通过cAdvisor监控容器和节点的资源占用状况
+##### 2.2.2 容器运行环境
+每个Node都要提供一个容器运行是环境，负责下载镜像并运行容器。Kubelet支持Docker、RKT、cri-o和Fraki等
+##### 2.2.3 Kube-proxy
+每个工作节点都需要运行一个kube-proxy进程，它能够按需为Service资源对象生成iptables或ipvs规则，从而捕获当前Service的
+ClusterIP的流量并转发至正确的后端Pod对象
+
+#### 2.3 核心附件
+##### 2.3.1 KubeDNS：
+在kubernetes集群中调度运行提供DNS服务的Pod，同一集群中的其他Pod可使用此DNS服务解决主机名。1.11版本后默认使用CoreDNS，
+之前版本为kube-dns。SKy-DNS则更早
+##### 2.3.2 Kubernetes Dashboard
+Kubernetes集群的可以通过Web UI来管理集群中的应用和集群自身
+##### 2.3.4 Heapster
+容器和节点的性能监控和分析系统。逐渐使用Prometheus结合其他组件取代
+##### 2.3.5 Ingress Controller
+Service是一组工作于传输层的负载均衡器，而Ingress是在应用层实现的HTTP（s）负载均衡机制。不过，Ingress资源自身并不能进行
+“流量穿透”，它仅是
