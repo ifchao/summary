@@ -71,4 +71,7 @@ Annotation(注解)是另一种附加在对象之上的key-value类型的数据�
 
 #### 11. Igress
 Kubernetes将pod对象和外部网络环境进行了隔离，Pod和Service等对象间的通信都使用其内部专用地址进行，如需要开放某些
-Pod对象对象提供给外部用户访问，则需要为其请求流量
+Pod对象对象提供给外部用户访问，则需要为其请求流量打开一个通往Kubernetes集群内部的通道，除了Service之外，Ingress
+也是这类通道的实现方式之一。
+
+
