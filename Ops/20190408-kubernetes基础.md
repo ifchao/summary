@@ -121,3 +121,29 @@ Kubernetes集群的可以通过Web UI来管理集群中的应用和集群自身
 ##### 2.3.5 Ingress Controller
 Service是一组工作于传输层的负载均衡器，而Ingress是在应用层实现的HTTP（s）负载均衡机制。不过，Ingress资源自身并不能进行
 “流量穿透”，它仅是一组路由的集合，这些规则需要通过Ingress控制器发挥作用。目前可以使用Nginx、Traefik、Envoy、Haproxy等。
+
+
+#### 2.4 Kubernetes网络模型基础
+云计算的核心是虚拟化技术，网络虚拟化技术又是其最重要的组成部分，用于在物理网络上虚拟多个相互隔离的虚拟网络，实现网络资源
+切片，提高网络资源利用率，实现弹性化网络。  
+Kubernetes的网络主要存在4种类型的通信：  
+- 同一Pod内的容器间通信
+- 各Pod彼此间的通信
+- Pod和Service之间的通信
+- 集群外部机器和Service的通信
+
+Kubernetes为Pod和Service资源对象分别使用了各自的专用网络，Pod网络有Kubernetes的网络插件配置实现，而Service的网络则由
+Kubernetes集群指定。  
+为了提供更灵活的解决方式，Kubernetes的网络模型需要借助于外部插件实现，它要求任何实现机制都必须满足以下需求。
+- 所有Pod间均可不经过NAT机制而直接通信
+- 所有节点均可不经过NAT机制直接与所有容器通信
+- 容器自己使用的IP也是其他容器或节点直接看到的地址。
+总结起来Kubernetes集群至少应该包含三个网络
+- 各主机（master，Node和etcd）自身的网络，节点网络，地址配置与主机的网络接口
+- Pod资源对象的网络，虚拟网络，地址配置于Pod中容器的网络接口。Pod网络需要借助Kubenet插件或CNI插件实现
+- Service资源对象的网络，虚拟网络，用于为Kubernetes集群中的Service配置IP地址，但是地址并不配置于任何主机或容器网络接口，
+通过Node上的kube-proxy配置为iptables或ipvs规则，从而将地址的流量调度至后端的各Pod对象之上。
+
+<div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/k8s-network.png"  /> </div><br>
+
+
