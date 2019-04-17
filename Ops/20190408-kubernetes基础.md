@@ -170,4 +170,23 @@ Kubernetes集群指定。
 
 
 #### 3.2 资源配置清单
+核心字段：
+- apiVersion
+- kind
+- metadate：
+- spec
+- status
+
+##### 3.2.1 metadata嵌套字段
+metadata字段用户描述对象的属性信息，其内嵌多个字段用于定义资源的元数据  
+**名称空间级别的资源必选字段：**
+- namespace：指定当前对象的名称空间，默认为default
+- name：设定当前对象的名称，在其所属的名称空间的同一类型中必须唯一
+- uid：当前对象的唯一标识符
+**可选字段：**
+- labels：设定用于标识当前对象的标签
+- annotations：用于labels的补充
+- ...
+
+
 
