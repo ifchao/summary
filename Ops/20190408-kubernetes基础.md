@@ -147,3 +147,27 @@ Kubernetes集群指定。
 <div align="center"> <img src="https://github.com/ihuangch/blog/blob/master/Ops/pic/k8s-network.png"  /> </div><br>
 
 
+
+### 3. Kubernetes资源管理基础
+#### 3.1 Kubernetes的资源对象
+根据资源的主要功能分为以下类别：
+- 工作负载：pod控制器属于工作负载型资源
+- 发现和负载均衡：Pod资源可能会因为任何意外故障而被重建，于是需要固定的可被“发现”的方式。通过七层代理实现
+请求流量负载均衡的Ingress资源。
+- 配置和存储：Docker容器分层联合挂载的方式决定了不宜在容器内部存储需要持久化的数据，于是通过引入挂载外部
+存储卷的方式来解决此类问题，Kubernete为此设计了VOlume资源。ConfigMap资源能够一环境变量或存储卷的方式接入到Pod
+资源的容器中。
+- 集群资源：Pod、Deployment、Service、ConfigMap等资源属于名称空间级别，可由相应的项目管理员所管理，Kubenetes还
+存在一些集群级别的资源。
+	- Namespace：资源对象名称的作用范围。默认为default
+	- Node：集群的工作节点
+	- Role：名称空间级别的由规则组成的权限集合
+	- ClusterRole：Cluster级别的由规则组成的权限集合
+	- RoleBinding：将Role中的许可权限绑定在一个或一组用户上
+	- ClusterRoleBinding：将CluterRole中定义的许可权限绑定在一个或一组用户上
+- 元数据资源：此类资源对象用于集群内部的其他资源配置其行为或特性
+
+
+
+#### 3.2 资源配置清单
+
