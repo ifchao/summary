@@ -34,6 +34,9 @@
 - [shell编程中参数扩展](https://github.com/ihuangch/blog/blob/master/Linux/20190218-shell编程中参数扩展.md)
 - [shell中while-done后接重定向用法](https://github.com/ihuangch/blog/blob/master/Linux/20190220-shell中while-done后接重定向用法.md)
 - [shell中条件测试](https://github.com/ihuangch/blog/blob/master/Linux/20190222-shell中条件测试.md)
+- [shell问题记录](https://github.com/ihuangch/blog/blob/master/Linux/20190319-shell问题记录.md)
+- [sed删除注释和空行](https://github.com/ihuangch/blog/blob/master/Linux/20190325-sed删除注释和空行.md)
+
 
 
 ### Ops
@@ -50,6 +53,13 @@
 - [gitlab安装配置与管理](https://github.com/ihuangch/blog/blob/master/Ops/20190107-gitlab安装配置与管理.md)
 - [线上gitlab服务器磁盘扩容操作步骤](https://github.com/ihuangch/blog/blob/master/Ops/20190117-线上gitlab服务器磁盘扩容操作步骤.md)
 - [ELK之Lucene](https://github.com/ihuangch/blog/blob/master/Ops/20190114-ELK之Lucene.md)
+- [20190117-线上gitlab服务器磁盘扩容操作步骤.md](https://github.com/ihuangch/blog/blob/master/Ops/20190117-线上gitlab服务器磁盘扩容操作步骤.md)
+- [20190118-阿里云或者aws的https配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190118-阿里云或者aws的https配置.md)
+- [20190118-阿里云或者aws的https配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190118-阿里云或者aws的https配置.md)
+- [20190122-sshd服务企业级安全配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-sshd服务企业级安全配置.md)
+- [20190122-常见加密算法.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-常见加密算法.md)
+- [20190408-kubernetes基础.md](https://github.com/ihuangch/blog/blob/master/Ops/20190408-kubernetes基础.md)
+
 
 ### Docker
 - [Docker基础](https://github.com/ihuangch/blog/blob/master/Docker/20181107-docker基础.md)
