@@ -4,7 +4,7 @@
 	如果出现错误，欢迎指正。谢谢
 
 ### Linux
-- [20190606-tcpdump使用](https://github.com/ihuangch/blog/blob/master/Linux/20180606-tcpdump使用.md)
+- [20180606-tcpdump使用](https://github.com/ihuangch/blog/blob/master/Linux/20180606-tcpdump使用.md)
 - [20180803-CentOS6更换网卡后无法启动网卡的排查](https://github.com/ihuangch/blog/blob/master/Linux/20180803-CentOS6更换网卡后无法启动网卡的排查.md)
 - [20180810-Linux终端的快捷键](https://github.com/ihuangch/blog/blob/master/Linux/20180810-Linux终端的快捷键.md)
 - [20180813-网络相关命令](https://github.com/ihuangch/blog/blob/master/Linux/20180913-网络相关命令.md)
@@ -45,7 +45,6 @@
 - [20180827-AWS中一些概念](https://github.com/ihuangch/blog/blob/master/Ops/20180827-AWS一些概念.md)
 - [20180831-密钥对连接远程主机](https://github.com/ihuangch/blog/blob/master/Ops/20180831-密钥连接远程主机.md)
 - [20180923-微服务架构](https://github.com/ihuangch/blog/blob/master/Ops/20180923-微服务架构.md)
-- [FTP服务原理]()
 - [20181113-ssh隧道](https://github.com/ihuangch/blog/blob/master/Ops/20181113-ssh隧道.md)
 - [20181129-Jenkins持续集成](https://github.com/ihuangch/blog/blob/master/Ops/20181129-Jenkins持续集成.md)
 - [20181203-zabbix基础与安装](https://github.com/ihuangch/blog/blob/master/Zabbix/20181203-zabbix基础与安装.md)
