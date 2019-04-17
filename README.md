@@ -59,6 +59,8 @@
 - [20190122-sshd服务企业级安全配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-sshd服务企业级安全配置.md)
 - [20190122-常见加密算法.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-常见加密算法.md)
 - [20190408-kubernetes基础.md](https://github.com/ihuangch/blog/blob/master/Ops/20190408-kubernetes基础.md)
+- [20190314-zabbix+nginx部署问题.md](https://github.com/ihuangch/blog/blob/master/Zabbix/20190314-zabbix+nginx部署问题.md)
+- [20190328-zabbix进阶.md](https://github.com/ihuangch/blog/blob/master/Zabbix/20190328-zabbix进阶.md)
 
 
 ### Docker
