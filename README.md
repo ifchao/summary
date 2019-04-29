@@ -52,14 +52,12 @@
 - [20190107-gitlab安装配置与管理](https://github.com/ihuangch/blog/blob/master/Ops/20190107-gitlab安装配置与管理.md)
 - [20190117-线上gitlab服务器磁盘扩容操作步骤](https://github.com/ihuangch/blog/blob/master/Ops/20190117-线上gitlab服务器磁盘扩容操作步骤.md)
 - [20190114-ELK之Lucene](https://github.com/ihuangch/blog/blob/master/Ops/20190114-ELK之Lucene.md)
-- [20190117-线上gitlab服务器磁盘扩容操作步骤.md](https://github.com/ihuangch/blog/blob/master/Ops/20190117-线上gitlab服务器磁盘扩容操作步骤.md)
-- [20190118-阿里云或者aws的https配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190118-阿里云或者aws的https配置.md)
-- [20190118-阿里云或者aws的https配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190118-阿里云或者aws的https配置.md)
-- [20190122-sshd服务企业级安全配置.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-sshd服务企业级安全配置.md)
-- [20190122-常见加密算法.md](https://github.com/ihuangch/blog/blob/master/Ops/20190122-常见加密算法.md)
-- [20190314-zabbix+nginx部署问题.md](https://github.com/ihuangch/blog/blob/master/Zabbix/20190314-zabbix+nginx部署问题.md)
-- [20190328-zabbix进阶.md](https://github.com/ihuangch/blog/blob/master/Zabbix/20190328-zabbix进阶.md)
-- [20190408-kubernetes基础.md](https://github.com/ihuangch/blog/blob/master/Ops/20190408-kubernetes基础.md)
+- [20190118-阿里云或者aws的https配置](https://github.com/ihuangch/blog/blob/master/Ops/20190118-阿里云或者aws的https配置.md)
+- [20190122-sshd服务企业级安全配置](https://github.com/ihuangch/blog/blob/master/Ops/20190122-sshd服务企业级安全配置.md)
+- [20190122-常见加密算法](https://github.com/ihuangch/blog/blob/master/Ops/20190122-常见加密算法.md)
+- [20190314-zabbix+nginx部署问题](https://github.com/ihuangch/blog/blob/master/Zabbix/20190314-zabbix+nginx部署问题.md)
+- [20190328-zabbix进阶](https://github.com/ihuangch/blog/blob/master/Zabbix/20190328-zabbix进阶.md)
+- [20190408-kubernetes基础](https://github.com/ihuangch/blog/blob/master/Ops/20190408-kubernetes基础.md)
 
 
 ### Docker
