@@ -72,7 +72,7 @@
 - [20181115-Ansible基本架构与原理](https://github.com/ihuangch/blog/blob/master/Ansible/20181115-Ansible基本架构与原理.md)
 
 ### Network
-- [20190225计算机网络](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机网络.md)
+- [20190225-计算机网络](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/计算机网络.md)
 - [20181103-HTTPS协议原理](https://github.com/ihuangch/blog/blob/master/Network/20181103-https协议原理.md)
 - [20180918-TCP状态切换](https://github.com/ihuangch/blog/blob/master/Network/20180918-TCP状态切换.md)
 - [20180915-网络划分相关](https://github.com/ihuangch/blog/blob/master/Network/20180915-网络划分相关.md)
@@ -97,7 +97,7 @@
 - [20180424-Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
 	
 ### DataStruct
-- [SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
+- [20180520-SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
 
 ### Git
 - [20181111-Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/20181111-Git和版本控制.md)
