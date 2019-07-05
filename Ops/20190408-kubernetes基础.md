@@ -88,12 +88,11 @@ Kubernetes集群的所有状态信息都需要持久存储于存储系统etcd中
 集群自身。生产环境中需要部署etcd集群，确保服务的高可用性。  
 同时etcd还提供监控（watch）功能，监听推送和变更。在Kubernetes集群中，etcd的变化，会通知API Server，并由其通过
 watch API向客户端输出。
-##### 2.1.3 控制管理器（Controller Manager）
+##### 2.1.3 控制器管理器（Controller Manager）
 Kubernetes中，集群级别的大多数功能都是由几个被称为控制器的进程执行实现的，这几个进程被集成于kube-controller-manager
 守护进程中。由控制器完成的主要功能包括：
 - 生命周期功能：包括Namespace创建和生命周期、Event垃圾回收、Pod终止相关的垃圾回收、级联垃圾回收和Node垃圾回收。
 - API业务逻辑：如ReplicaSet执行Pod扩展等
-
 ##### 2.1.4 调度器（Scheduler）
 Kubernetes是用于部署和管理大规模容器应用的平台，API Server确认Pod对象的创建请求之后，便需要由Scheduler根据集群内各节点
 的可用资源状态，以及要运行的容器的资源需求做出调度决策。Kubernetes支持用户自定义调度器
