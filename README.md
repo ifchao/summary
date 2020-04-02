@@ -40,6 +40,7 @@
 
 
 ### Ops
+- [20200402-配置多GIT账号](https://github.com/ihuangch/blog/blob/master/Ops/20200402-配置多GIT账号.md)
 - [20190328-Zabbix进阶](https://github.com/ihuangch/blog/blob/master/Zabbix/20190328-zabbix进阶.md)
 - [20190314-Zabbix+Nginx部署问题](https://github.com/ihuangch/blog/blob/master/Zabbix/20190314-zabbix+nginx部署问题.md)
 - [20190122-常见加密算法](https://github.com/ihuangch/blog/blob/master/Ops/20190122-常见加密算法.md)
@@ -105,6 +106,4 @@
 
 ### Oh,My Life
 - [20181126-职业感想](https://github.com/ihuangch/blog/blob/master/Life/20181126-career-advice.md)
-- [20181125-poetry](https://github.com/ihuangch/blog/blob/master/Life/20181125-poetry.md)
 
-## Test
