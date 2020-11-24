@@ -104,6 +104,6 @@
 - [20181111-Git和版本控制](https://github.com/ihuangch/blog/blob/master/Git/20181111-Git和版本控制.md)
 - [20180803-Git中的一些小问题](https://github.com/ihuangch/blog/blob/master/Git/20180803-Git中遇到的小问题.md)
 
-### Oh,My Life
+### Oh, My Life
 - [20181126-职业感想](https://github.com/ihuangch/blog/blob/master/Life/20181126-career-advice.md)
 
