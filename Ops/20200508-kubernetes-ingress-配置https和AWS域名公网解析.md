@@ -1,6 +1,6 @@
 ___
 - FileName: kubernetes-ingress-配置https和域名公网解析.md
-- Author: chaoqun.huang -chaoqun.huang@datavisor.com
+- Author: huangch96@qq.com
 - Description: ---
 - Create:2020-05-08 13:58:13
 ___
