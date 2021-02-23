@@ -78,7 +78,7 @@
 - [20180918-TCP状态切换](https://github.com/ihuangch/blog/blob/master/Network/20180918-TCP状态切换.md)
 - [20180915-网络划分相关](https://github.com/ihuangch/blog/blob/master/Network/20180915-网络划分相关.md)
 
-### MySQL | NoSQL | Other SQL
+### MySQL | NoSQL
 - [20190223-Redis](https://github.com/ihuangch/CS-Notes/blob/master/docs/notes/Redis.md)
 - [20190121-MySQL日志](https://github.com/ihuangch/blog/blob/master/Mysql/20190121-MySQL日志.md)
 - [20190110-MySQL用户管理和权限设置](https://github.com/ihuangch/blog/blob/master/Mysql/20190110-MySQL用户管理和权限设置.md)
