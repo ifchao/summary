@@ -97,6 +97,7 @@
 - [20180430-Python正则表达式](https://github.com/ihuangch/blog/blob/master/Python/20180430-Python之正则表达式.md)
 - [20180424-Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
 - [20201211-Python虚拟环境配置](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python配置Virtual-env.md)
+- [20201211-Python合并字典](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python字典合并的方式.md)
 	
 ### DataStruct
 - [20180520-SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
