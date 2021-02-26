@@ -91,13 +91,13 @@
 - [20181218-SQL语句](https://github.com/ihuangch/blog/blob/master/Mysql/20181218-SQL.md)
 
 ### Python
+- [20201211-Python虚拟环境配置](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python配置Virtual-env.md)
+- [20201211-Python合并字典](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python字典合并的方式.md)
 - [20180515-Python编码规范](https://github.com/ihuangch/blog/blob/master/Python/20180515-Python编码规范.md)
 - [20180513-Python内置函数](https://github.com/ihuangch/blog/blob/master/Python/20180513-Python常见内置函数.md)
 - [20180506-Python字符编码](https://github.com/ihuangch/blog/blob/master/Python/20180506-Python字符编码问题.md)
 - [20180430-Python正则表达式](https://github.com/ihuangch/blog/blob/master/Python/20180430-Python之正则表达式.md)
 - [20180424-Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
-- [20201211-Python虚拟环境配置](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python配置Virtual-env.md)
-- [20201211-Python合并字典](https://github.com/ihuangch/Notes-CS/blob/master/Python/20201211-Python字典合并的方式.md)
 	
 ### DataStruct
 - [20180520-SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
