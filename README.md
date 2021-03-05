@@ -98,6 +98,9 @@
 - [20180506-Python字符编码](https://github.com/ihuangch/blog/blob/master/Python/20180506-Python字符编码问题.md)
 - [20180430-Python正则表达式](https://github.com/ihuangch/blog/blob/master/Python/20180430-Python之正则表达式.md)
 - [20180424-Python之udp通信](https://github.com/ihuangch/blog/blob/master/Python/20180424-Python之udp通信.md)
+
+### Django
+- [20210305-Django模型内置类class-meta](https://github.com/ihuangch/Notes/blob/master/Python/20210305-Django%E6%A8%A1%E5%9E%8B%E5%86%85%E7%BD%AE%E7%B1%BBclass-meta.md)
 	
 ### DataStruct
 - [20180520-SingleList单链表](https://github.com/ihuangch/blog/blob/master/DataStruct/)
