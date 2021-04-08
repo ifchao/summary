@@ -36,16 +36,22 @@ def BubbleSort(alist: list) -> list:
             j∈[0,N-1-i)           //每遍循环要处理的无序部分
                 swap(j,j+1)          //两两排序（升序/降序）
     """
-    for i in range(len(alist)-1):           # 第一层循环决定需要进行多少次比较
-        for j in range(len(alist)-1-i):     # 第二层循环遍历进行比较
+    print("source list: ", alist)
+    for i in range(1, len(alist)):           # 第一层循环决定需要进行多少次比较
+        for j in range(len(alist)-i):        # 第二层循环遍历进行比较
+    ## 循环有多种写法
+    #for i in range(len(alist)-1):           # 第一层循环决定需要进行多少次比较
+    #    for j in range(len(alist)-1-i):        # 第二层循环遍历进行比较
             if alist[j] > alist[j+1]:
                 alist[j], alist[j+1] = alist[j+1], alist[j]
+        print("第{}次进行比较".format(i), alist)
+    print('BubbleSort: ', alist)
     return alist
 
 
 def TestSort() -> None:
     alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    print('BubbleSort: ', BubbleSort(alist))
+    BubbleSort(alist)
 
 
 if __name__ == '__main__':
