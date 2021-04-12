@@ -21,10 +21,10 @@
 """
 
 
-# 冒泡排序: 内部排序, 稳定,
-def BubbleSort(alist: list) -> list: 
+# 冒泡排序: 内部排序, 稳定, 比较排序
+def BubbleSort(alist: list)->list: 
     """
-    冒泡排序的原理:
+    冒泡排序的原理: 内部排序, 稳定, 比较排序
         重复的走访需要排序的数列, 一次比较两个元素，如果他们的顺序错误就把他们交换过来。
         走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
         1. 比较相邻的元素。如果第一个比第二个大，就交换他们两个
@@ -35,11 +35,16 @@ def BubbleSort(alist: list) -> list:
         i∈[0,N-1)               //循环N-1遍
             j∈[0,N-1-i)           //每遍循环要处理的无序部分
                 swap(j,j+1)          //两两排序（升序/降序）
+    时间复杂度分析:
+        最佳情况: T(n) = O(n)
+        最差情况: T(n) = O(n^2)
+        平均情况: T(n) = O(n^2)
     """
-    print("source list: ", alist)
+    print("BubbleSort:")
+    print("Source List: ", alist)
     for i in range(1, len(alist)):           # 第一层循环决定需要进行多少次比较
         for j in range(len(alist)-i):        # 第二层循环遍历进行比较
-    ## 循环有多种写法
+    # 循环有多种写法
     #for i in range(len(alist)-1):           # 第一层循环决定需要进行多少次比较
     #    for j in range(len(alist)-1-i):        # 第二层循环遍历进行比较
             if alist[j] > alist[j+1]:
@@ -49,9 +54,34 @@ def BubbleSort(alist: list) -> list:
     return alist
 
 
+# 选择排序: 内部排序, 不稳定, 比较排序
+def SelectSort(alist: list) -> list:
+    """ 
+    选择排序的原理: 内部排序, 不稳定, 比较排序
+        选择排序是一种简单直观的排序, 无论放什么数据都是O(n^2)的时间复杂度, 使用的时候数据规模越小越好。
+        1. 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。
+        2. 再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。
+        3. 重复第二步，直到所有元素均排序完毕
+    """
+    print("SelectSort: ")
+    print("Source List: ", alist)
+    for i in range(len(alist) - 1):
+        min_index = i
+        for j in range(i + 1, len(alist)):
+            if alist[j] < alist[min_index]:
+                min_index = j
+        if i != min_index:
+            alist[i], alist[min_index] = alist[min_index], alist[i]
+        print("第{}次进行选择".format(i), alist)
+    print('BubbleSort: ', alist)
+    return alist
+
+
 def TestSort() -> None:
     alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
     BubbleSort(alist)
+    alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
+    SelectSort(alist)
 
 
 if __name__ == '__main__':
