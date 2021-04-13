@@ -105,16 +105,29 @@ def InsertSort(alist: list) -> list:
     print('InsertSort: ', alist)
     return alist
 
-# 希尔排序: 内部排序, 不稳定
+# 希尔排序: 内部排序, 不稳定, 比较排序
+def ShellSort(alist: list) -> list:
+    """ 
+    希尔排序原理: 内部排序, 不稳定, 比较排序
+        希尔排序也是一种插入排序, 简单插入排序经过改进后的高效的版本, 也称为缩小增量排序。
+        与插入排序的不同之处在于, 会优先比较距离较远的元素。
+    """
+    step = len(alist) // 2
+    while step > 0:
+        for i in range(step, len(alist)):
+            while i >= step and alist[i] < alist[i-step]:
+                alist[i], alist[i-step] = alist[i-step], alist[i]
+                i -= step
+        step //= 2
+    return alist
+
+
 
 
 def TestSort() -> None:
     alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    BubbleSort(alist)
-    alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    SelectSort(alist)
-    alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    InsertSort(alist)
+    ShellSort(alist)
+    print(alist)
 
 
 
