@@ -127,12 +127,47 @@ def ShellSort(alist: list) -> list:
         step //= 2
     return alist
 
+# 归并排序: 外部排序, 稳定, 比较排序
+# 合并两个有序数组
+def MergeSort(alist: list) -> list:
+    """ 
+    归并排序原理: 外部排序, 稳定, 比较排序
+        归并排序（Merge sort）是建立在归并操作上的一种有效的排序算法。
+        该算法是采用分治法（Divide and Conquer）的一个非常典型的应用。
+        作为一种典型的分而治之思想的算法应用，归并排序的实现由两种方法：
+            自上而下的递归（所有递归的方法都可以用迭代重写，所以就有了第 2 种方法）；
+            自下而上的迭代；
+    步骤:
+        申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；
+        设定两个指针，最初位置分别为两个已经排序序列的起始位置；
+        比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；
+        重复步骤 3 直到某一指针达到序列尾；
+        将另一序列剩下的所有元素直接复制到合并序列尾。
+    """
+    if len(alist) <= 1:
+        return alist
+    num = int(len(alist) / 2)
+    left = MergeSort(alist[:num])
+    right = MergeSort(alist[num:])
+    return Merge(left, right)
 
-
+def Merge(left, right):
+    r, l=0, 0
+    result=[]
+    while l<len(left) and r<len(right):
+        if left[l] <= right[r]:
+            result.append(left[l])
+            l += 1
+        else:
+            result.append(right[r])
+            r += 1
+    result += list(left[l:])
+    result += list(right[r:])
+    return result
 
 def TestSort() -> None:
     alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    ShellSort(alist)
+    print(MergeSort(alist))
     print(alist)
 
 
