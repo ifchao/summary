@@ -165,10 +165,36 @@ def Merge(left, right):
     result += list(right[r:])
     return result
 
+# 快速排序: 内部排序, 不稳定, 比较排序
+def quickSort(alist: list) -> list:
+    """ 
+    """
+    if len(alist) >= 2:  # 递归入口及出口        
+        mid = alist[len(alist)//2]  # 选取基准值，也可以选取第一个或最后一个元素        
+        left, right = [], []  # 定义基准值左右两侧的列表        
+        alist.remove(mid)  # 从原始数组中移除基准值        
+        for num in alist:            
+            if num >= mid:                
+                right.append(num)            
+            else:                
+                left.append(num)        
+        return quickSort(left) + [mid] + quickSort(right) 
+    else:        
+        return alist
+ 
+
+
+
+
+
+
+
+
 def TestSort() -> None:
     alist = [3, 1, 9, 24, 12, 34, 56, 97, 25]
-    print(MergeSort(alist))
+    print(quickSort(alist))
     print(alist)
+
 
 
 
